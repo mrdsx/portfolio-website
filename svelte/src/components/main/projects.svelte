@@ -1,23 +1,23 @@
 <script>
   import {
-    FastAPIIcon,
-    PythonIcon,
-    ReactIcon,
-    SvelteIcon,
-    TailwindCSSIcon,
-    TypescriptIcon,
+      FastAPIIcon,
+      PythonIcon,
+      ReactIcon,
+      SvelteIcon,
+      TailwindCSSIcon,
+      TypescriptIcon,
   } from "@/components/icons";
   import SvgTooltip from "@/components/svg-tooltip.svelte";
   import {
-    Card,
-    CardDescription,
-    CardFooter,
-    CardGithubLink,
-    CardHeader,
-    CardImage,
-    CardPreviewLink,
-    CardSkills,
-    CardTitle,
+      Card,
+      CardDescription,
+      CardFooter,
+      CardGithubLink,
+      CardHeader,
+      CardImage,
+      CardPreviewLink,
+      CardSkills,
+      CardTitle,
   } from "@/lib/components/ui/card";
 
   import { getCDNImageURL } from "@/lib/utils";
@@ -84,7 +84,7 @@
       </CardSkills>
       <CardFooter>
         <CardGithubLink
-          githubURL="https://github.com/mrdsx/svelte-portfolio-website"
+          githubURL="https://github.com/mrdsx/portfolio-website"
         />
         <CardPreviewLink previewURL="#" />
       </CardFooter>

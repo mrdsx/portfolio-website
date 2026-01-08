@@ -89,7 +89,7 @@
       </CardSkills>
       <CardFooter>
         <CardGithubLink
-          githubURL="https://github.com/mrdsx/svelte-astro-portfolio-website"
+          githubURL="https://github.com/mrdsx/portfolio-website"
         />
         <CardPreviewLink previewURL="#" />
       </CardFooter>
