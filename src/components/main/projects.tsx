@@ -76,7 +76,7 @@ const Projects = () => (
           </SVGTooltip>
         </CardSkills>
         <CardFooter>
-          <CardGithubLink githubURL="https://github.com/mrdsx/portfolio-website" />
+          <CardGithubLink githubURL="http://github.com/mrdsx/react-portfolio-website" />
           <CardPreviewLink previewURL="#" />
         </CardFooter>
       </Card>
