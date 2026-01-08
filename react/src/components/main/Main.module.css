@@ -1,0 +1,9 @@
+@reference "../../globals.css";
+
+.section {
+  @apply flex flex-col gap-2;
+}
+
+.sectionHeading {
+  @apply my-2 text-xl font-bold;
+}

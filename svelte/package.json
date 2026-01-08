@@ -1,0 +1,37 @@
+{
+  "name": "svelte-portfolio-website",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "production": "bun install --production --frozen-lockfile",
+    "build": "vite build",
+    "preview": "bun production && bun run build && vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@internationalized/date": "^3.10.1",
+    "@lucide/svelte": "^0.562.0",
+    "@sveltejs/vite-plugin-svelte": "^6.2.1",
+    "@tailwindcss/vite": "^4.1.18",
+    "@tsconfig/svelte": "^5.0.6",
+    "bits-ui": "^2.15.4",
+    "tailwind-merge": "^3.4.0",
+    "tailwind-variants": "^3.2.2",
+    "tailwindcss": "^4.1.18",
+    "tw-animate-css": "^1.4.0"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^6.0.2",
+    "@types/node": "^24.10.1",
+    "prettier": "^3.7.4",
+    "prettier-plugin-svelte": "^3.4.0",
+    "prettier-plugin-tailwindcss": "^0.7.2",
+    "svelte": "^5.46.1",
+    "svelte-check": "^4.3.5",
+    "typescript": "~5.9.3",
+    "vite": "^7.3.1"
+  }
+}

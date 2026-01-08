@@ -1,0 +1,33 @@
+{
+  "SVG Icon": {
+    "prefix": "icon",
+    "body": [
+      "import SVG from \"@/components/svg\";",
+      "",
+      "const $1Icon = () => (",
+      "<SVG xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\">",
+      "$2",
+      "</SVG>",
+      ");",
+      "",
+      "export default $1Icon;",
+    ],
+  },
+  "Tech Skill": {
+    "prefix": "skill",
+    "body": [
+      "import Skill from \"@/components/skill\";",
+      "",
+      "const $1Skill = ({...props}: React.ComponentProps<typeof Skill>) => (",
+      "<Skill {...props}>",
+      "</Skill>",
+      ");",
+      "",
+      "export default $1Skill;",
+    ],
+  },
+  "React Component Arrow Default Export": {
+    "prefix": "rcade",
+    "body": ["const $1 = () => <div></div>;", "", "export default $1;"],
+  },
+}
