@@ -10,12 +10,12 @@ const { githubURL } = Astro.props;
 
 {
   githubURL ? (
-    <a class="btn flex-1" href={githubURL} target="_blank">
+    <a class="btn-sm flex-1 text-xs" href={githubURL} target="_blank">
       <GithubIcon />
       Github
     </a>
   ) : (
-    <button class="btn flex-1" disabled>
+    <button class="btn-sm flex-1 text-xs" disabled>
       <GithubIcon />
       Github
     </button>
