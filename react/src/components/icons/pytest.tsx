@@ -1,6 +1,6 @@
 import SVG from "@/components/svg";
 
-const PytestIcon = () => (
+const PyTestIcon = () => (
   <SVG xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
     <path
       d="M31.512 30.398h61.304a3.006 3.006 0 010 6.012H31.512a3.007 3.007 0 01-3.004-3.004 3.008 3.008 0 013.004-3.008zm0 0"
@@ -19,4 +19,4 @@ const PytestIcon = () => (
   </SVG>
 );
 
-export default PytestIcon;
+export default PyTestIcon;

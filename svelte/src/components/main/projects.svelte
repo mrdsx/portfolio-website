@@ -84,7 +84,7 @@
       </CardSkills>
       <CardFooter>
         <CardGithubLink
-          githubURL="https://github.com/mrdsx/portfolio-website"
+          githubURL="https://github.com/mrdsx/portfolio-website/tree/main/svelte"
         />
         <CardPreviewLink previewURL="#" />
       </CardFooter>

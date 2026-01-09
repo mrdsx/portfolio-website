@@ -83,7 +83,7 @@ const Projects = () => (
           </SVGTooltip>
         </CardSkills>
         <CardFooter>
-          <CardGithubLink githubURL="https://github.com/mrdsx/portfolio-website" />
+          <CardGithubLink githubURL="https://github.com/mrdsx/portfolio-website/tree/main/react-astro" />
           <CardPreviewLink previewURL="#" />
         </CardFooter>
       </Card>

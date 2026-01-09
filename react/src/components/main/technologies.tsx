@@ -5,7 +5,7 @@ import HTMLSkill from "@/components/skills/html";
 import JavascriptSkill from "@/components/skills/javascript";
 import NetlifySkill from "@/components/skills/netlify";
 import PostgreSQLSkill from "@/components/skills/postgresql";
-import PytestSkill from "@/components/skills/pytest";
+import PyTestSkill from "@/components/skills/pytest";
 import PythonSkill from "@/components/skills/python";
 import RailwaySkill from "@/components/skills/railway";
 import ReactSkill from "@/components/skills/react";
@@ -31,7 +31,7 @@ const Technologies = () => (
       <h3 className="min-w-30 font-semibold">Backend</h3>
       <div className="flex flex-wrap gap-2">
         <PythonSkill /> <FastAPISkill /> <PostgreSQLSkill />
-        <SQLiteSkill /> <PytestSkill />
+        <SQLiteSkill /> <PyTestSkill />
       </div>
     </div>
     <div className="flex flex-col gap-2">
