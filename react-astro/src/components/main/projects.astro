@@ -26,13 +26,42 @@ import { getCDNImageURL } from "@/lib/utils";
 import styles from "./Main.module.css";
 
 const IMG_HEIGHT = 200;
+const swiftTrackerImage = getCDNImageURL("swift-tracker_guijc3", IMG_HEIGHT);
 const ovioImage = getCDNImageURL("ovio_irqhyp", IMG_HEIGHT);
 const portfolioImage = getCDNImageURL("portfolio-website_r0cuwy", IMG_HEIGHT);
 ---
 
 <section class={styles.section}>
   <h2 class={styles.sectionHeading}>Projects</h2>
-  <div class="grid grid-cols-1 gap-4 sm:w-fit sm:grid-cols-2">
+  <div class="flex flex-wrap gap-4 sm:w-fit">
+    <Card>
+      <CardHeader>
+        <CardImage src={swiftTrackerImage} alt="swift-tracker" />
+        <CardTitle>Swift Tracker</CardTitle>
+        <CardDescription>
+          International payment tracker for fast transactions
+          look up with transaction searches persistency and tags for each search.
+        </CardDescription>
+      </CardHeader>
+      <CardSkills>
+        <SVGTooltip client:visible content="TypeScript">
+          <TypescriptIcon />
+        </SVGTooltip>
+        <SVGTooltip client:visible content="TailwindCSS">
+          <TailwindIcon />
+        </SVGTooltip>
+        <SVGTooltip client:visible content="React">
+          <ReactIcon />
+        </SVGTooltip>
+        <SVGTooltip client:visible content="Astro">
+          <AstroIcon />
+        </SVGTooltip>
+      </CardSkills>
+      <CardFooter>
+        <CardGithubLink />
+        <CardProjectLink projectURL="https://swift-tracker.net" />
+      </CardFooter>
+    </Card>
     <Card>
       <CardHeader>
         <CardImage src={ovioImage} alt="Olympiad Preparation" />
@@ -73,7 +102,7 @@ const portfolioImage = getCDNImageURL("portfolio-website_r0cuwy", IMG_HEIGHT);
       </CardSkills>
       <CardFooter>
         <CardGithubLink />
-        <CardProjectLink previewURL="https://olympiad-preparation.vercel.app" />
+        <CardProjectLink projectURL="https://olympiad-preparation.vercel.app" />
       </CardFooter>
     </Card>
     <Card>
@@ -103,7 +132,7 @@ const portfolioImage = getCDNImageURL("portfolio-website_r0cuwy", IMG_HEIGHT);
         <CardGithubLink
           githubURL="https://github.com/mrdsx/portfolio-website/tree/main/react-astro"
         />
-        <CardProjectLink previewURL="#" />
+        <CardProjectLink projectURL="#" />
       </CardFooter>
     </Card>
   </div>

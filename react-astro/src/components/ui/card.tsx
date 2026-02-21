@@ -8,7 +8,7 @@ const LINK_CLASSNAME = "flex-1";
 
 const Card = ({ children }: React.PropsWithChildren) => (
   <GlassButton
-    className="w-[90vw] flex-col gap-2.5 hover:bg-gray-900 hover:not-has-[img:hover]:bg-gray-800 sm:max-w-[300px] sm:min-w-[250px] [&>div]:w-full"
+    className="w-full max-w-80 flex-col gap-2.5 hover:bg-gray-900 hover:not-has-[img:hover]:bg-gray-800"
     size="lg"
   >
     {children}
@@ -20,7 +20,7 @@ const CardHeader = ({ children }: React.PropsWithChildren) => (
 );
 
 const CardFooter = ({ children }: React.PropsWithChildren) => (
-  <div className="flex gap-2">{children}</div>
+  <div className="flex w-full gap-2">{children}</div>
 );
 
 const CardImage = ({ ...props }: React.ComponentProps<"img">) => (
@@ -36,7 +36,7 @@ const CardDescription = ({ children }: React.PropsWithChildren) => (
 );
 
 const CardSkills = ({ children }: React.PropsWithChildren) => (
-  <div className="flex flex-wrap gap-2">{children}</div>
+  <div className="flex flex-wrap gap-2 self-start">{children}</div>
 );
 
 const CardGithubLink = ({ githubURL }: { githubURL?: string }) => {
@@ -59,9 +59,9 @@ const CardGithubLink = ({ githubURL }: { githubURL?: string }) => {
   );
 };
 
-const CardProjectLink = ({ previewURL }: { previewURL: string }) => (
+const CardProjectLink = ({ projectURL }: { projectURL: string }) => (
   <Button className={LINK_CLASSNAME} asChild>
-    <a href={previewURL}>
+    <a href={projectURL}>
       <EyeIcon />
       View
     </a>
