@@ -1,3 +1,6 @@
+import PersonalBadge from "@/components/badges/personal";
+import ProprietaryBadge from "@/components/badges/proprietary";
+import ToyProjectBadge from "@/components/badges/toy-project";
 import AstroIcon from "@/components/icons/astro";
 import FastAPIIcon from "@/components/icons/fastapi";
 import GithubActionsIcon from "@/components/icons/github-actions";
@@ -21,6 +24,7 @@ type Project = {
     alt: string;
   };
   techStack: { icon: () => React.ReactElement; title: string }[];
+  badges: (() => React.ReactElement)[];
   githubURL?: string;
   projectURL: string;
 };
@@ -36,6 +40,7 @@ const projects: Project[] = [
       { icon: TailwindIcon, title: "TailwindCSS" },
       { icon: SvelteIcon, title: "Svelte" },
     ],
+    badges: [ToyProjectBadge],
     projectURL: "https://sunny-sunburst-407336.netlify.app",
     githubURL: "https://github.com/mrdsx/word-game",
   },
@@ -50,6 +55,7 @@ const projects: Project[] = [
       { icon: ReactIcon, title: "React" },
       { icon: AstroIcon, title: "Astro" },
     ],
+    badges: [ProprietaryBadge],
     projectURL: "https://swift-tracker.net",
   },
   {
@@ -66,6 +72,7 @@ const projects: Project[] = [
       { icon: FastAPIIcon, title: "FastAPI" },
       { icon: GithubActionsIcon, title: "Github Actions" },
     ],
+    badges: [ProprietaryBadge],
     projectURL: "https://olympiad-preparation.vercel.app",
   },
   {
@@ -79,6 +86,7 @@ const projects: Project[] = [
       { icon: ReactIcon, title: "React" },
       { icon: AstroIcon, title: "Astro" },
     ],
+    badges: [PersonalBadge],
     githubURL: "https://github.com/mrdsx/portfolio-website",
     projectURL: "https://mrdsx.vercel.app",
   },

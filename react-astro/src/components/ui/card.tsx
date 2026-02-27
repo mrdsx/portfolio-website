@@ -23,6 +23,10 @@ const CardFooter = ({ children }: React.PropsWithChildren) => (
   <div className="flex w-full gap-2">{children}</div>
 );
 
+const CardBadges = ({ ...props }: React.ComponentProps<"div">) => (
+  <div className="space-x-2 self-start pb-2" {...props} />
+);
+
 const CardImage = ({ ...props }: React.ComponentProps<"img">) => (
   <img className="h-[200px] border bg-gray-800 p-2" {...props} />
 );
@@ -70,6 +74,7 @@ const CardProjectLink = ({ projectURL }: { projectURL: string }) => (
 
 export {
   Card,
+  CardBadges,
   CardDescription,
   CardFooter,
   CardGithubLink,
