@@ -1,0 +1,36 @@
+---
+import "@/globals.css";
+import { cn } from "@/lib/utils";
+
+type Props = {
+  className?: string;
+};
+
+const { className } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="title" content="mrdsx" />
+    <meta
+      name="description"
+      content="Personal portfolio website built with Astro."
+    />
+    <title>mrdsx</title>
+  </head>
+  <body>
+    <div
+      class={cn(
+        "flex min-h-screen flex-col bg-gray-900 px-5 pt-10 sm:px-20",
+        className,
+      )}
+    >
+      <slot />
+    </div>
+  </body>
+</html>

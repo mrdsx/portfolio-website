@@ -40,7 +40,7 @@ const CardSkills = ({ children }: React.PropsWithChildren) => (
 );
 
 const CardGithubLink = ({ githubURL }: { githubURL?: string }) => {
-  if (githubURL) {
+  if (githubURL !== undefined) {
     return (
       <Button className={LINK_CLASSNAME} asChild>
         <a href={githubURL} target="_blank">

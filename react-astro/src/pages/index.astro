@@ -2,23 +2,11 @@
 import Footer from "@/components/footer.astro";
 import Header from "@/components/header/header.astro";
 import Main from "@/components/main/main.astro";
-import "@/globals.css";
+import RootLayout from "@/components/root-layout.astro";
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="light dark" />
-    <title>mrdsx</title>
-  </head>
-  <body>
-    <div class="flex min-h-screen flex-col bg-gray-900 px-5 sm:px-20">
-      <Header />
-      <Main />
-      <Footer />
-    </div>
-  </body>
-</html>
+<RootLayout>
+  <Header />
+  <Main />
+  <Footer />
+</RootLayout>

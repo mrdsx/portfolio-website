@@ -1,12 +1,7 @@
 ---
-import AstroIcon from "@/components/icons/astro";
-import FastAPIIcon from "@/components/icons/fastapi";
-import GithubActionsIcon from "@/components/icons/github-actions";
-import PythonIcon from "@/components/icons/python";
-import ReactIcon from "@/components/icons/react";
-import TailwindIcon from "@/components/icons/tailwindcss";
-import TypescriptIcon from "@/components/icons/typescript";
-import SVGTooltip from "@/components/svg-tooltip";
+import { relevantProjects } from "@/lib/projects";
+import GlassButton from "../glass-button";
+import SVGTooltip from "../svg-tooltip";
 import {
   Card,
   CardDescription,
@@ -17,111 +12,35 @@ import {
   CardProjectLink,
   CardSkills,
   CardTitle,
-} from "@/components/ui/card";
-import { getCDNImageURL } from "@/lib/utils";
-
+} from "../ui/card";
 import styles from "./Main.module.css";
-
-const IMG_HEIGHT = 200;
-const swiftTrackerImage = getCDNImageURL("swift-tracker_guijc3", IMG_HEIGHT);
-const ovioImage = getCDNImageURL("ovio_irqhyp", IMG_HEIGHT);
-const portfolioImage = getCDNImageURL("portfolio-website_r0cuwy", IMG_HEIGHT);
 ---
 
 <section class={styles.section}>
   <h2 class={styles.sectionHeading}>Projects</h2>
   <div class="flex flex-wrap gap-4 sm:w-fit">
-    <Card>
-      <CardHeader>
-        <CardImage src={swiftTrackerImage} alt="swift-tracker" />
-        <CardTitle>Swift Tracker</CardTitle>
-        <CardDescription>
-          International payment tracker for fast transactions look up within
-          SWIFT GPI network.
-        </CardDescription>
-      </CardHeader>
-      <CardSkills>
-        <SVGTooltip client:visible content="TypeScript">
-          <TypescriptIcon />
-        </SVGTooltip>
-        <SVGTooltip client:visible content="TailwindCSS">
-          <TailwindIcon />
-        </SVGTooltip>
-        <SVGTooltip client:visible content="React">
-          <ReactIcon />
-        </SVGTooltip>
-        <SVGTooltip client:visible content="Astro">
-          <AstroIcon />
-        </SVGTooltip>
-      </CardSkills>
-      <CardFooter>
-        <CardGithubLink />
-        <CardProjectLink projectURL="https://swift-tracker.net" />
-      </CardFooter>
-    </Card>
-    <Card>
-      <CardHeader>
-        <CardImage src={ovioImage} alt="Olympiad Preparation" />
-        <CardTitle>Olympiad Preparation</CardTitle>
-        <CardDescription>
-          Olympiad Preparation is production-ready and actively maintained app,
-          developed for preparing to olympiad "ОВИО Наше наследие".
-        </CardDescription>
-      </CardHeader>
-      <CardSkills>
-        <SVGTooltip client:visible content="TypeScript">
-          <TypescriptIcon />
-        </SVGTooltip>
-        <SVGTooltip client:visible content="TailwindCSS">
-          <TailwindIcon />
-        </SVGTooltip>
-        <SVGTooltip client:visible content="React">
-          <ReactIcon />
-        </SVGTooltip>
-        <SVGTooltip client:visible content="Python">
-          <PythonIcon />
-        </SVGTooltip>
-        <SVGTooltip client:visible content="FastAPI">
-          <FastAPIIcon />
-        </SVGTooltip>
-        <SVGTooltip client:visible content="GitHub Actions">
-          <GithubActionsIcon />
-        </SVGTooltip>
-      </CardSkills>
-      <CardFooter>
-        <CardGithubLink />
-        <CardProjectLink projectURL="https://olympiad-preparation.vercel.app" />
-      </CardFooter>
-    </Card>
-    <Card>
-      <CardHeader>
-        <CardImage src={portfolioImage} alt="Portfolio Website" />
-        <CardTitle>Portfolio Website</CardTitle>
-        <CardDescription>
-          Simple portfolio website for demonstrating technical skills and
-          projects.
-        </CardDescription>
-      </CardHeader>
-      <CardSkills>
-        <SVGTooltip client:visible content="TypeScript">
-          <TypescriptIcon />
-        </SVGTooltip>
-        <SVGTooltip client:visible content="TailwindCSS">
-          <TailwindIcon />
-        </SVGTooltip>
-        <SVGTooltip client:visible content="React">
-          <ReactIcon />
-        </SVGTooltip>
-        <SVGTooltip client:visible content="Astro">
-          <AstroIcon />
-        </SVGTooltip>
-      </CardSkills>
-      <CardFooter>
-        <CardGithubLink
-          githubURL="https://github.com/mrdsx/portfolio-website/tree/main/react-astro"
-        />
-        <CardProjectLink projectURL="#" />
-      </CardFooter>
-    </Card>
+    {
+      relevantProjects.map((project) => (
+        <Card>
+          <CardHeader>
+            <CardImage {...project.image} />
+            <CardTitle>{project.name}</CardTitle>
+            <CardDescription>{project.description}</CardDescription>
+          </CardHeader>
+          <CardSkills>
+            {project.techStack.map((tech) => (
+              <SVGTooltip client:visible content={tech.title}>
+                <tech.icon />
+              </SVGTooltip>
+            ))}
+          </CardSkills>
+          <CardFooter>
+            <CardGithubLink githubURL={project.githubURL} />
+            <CardProjectLink projectURL={project.projectURL} />
+          </CardFooter>
+        </Card>
+      ))
+    }
   </div>
+  <GlassButton href="/projects">View more projects</GlassButton>
 </section>

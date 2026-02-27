@@ -1,0 +1,53 @@
+---
+import GlassButton from "@/components/glass-button";
+import RootLayout from "@/components/root-layout.astro";
+import SVGTooltip from "@/components/svg-tooltip";
+import {
+  Card,
+  CardDescription,
+  CardFooter,
+  CardGithubLink,
+  CardHeader,
+  CardImage,
+  CardProjectLink,
+  CardSkills,
+  CardTitle,
+} from "@/components/ui/card";
+import { projects } from "@/lib/projects";
+import { ArrowLeftIcon } from "lucide-react";
+---
+
+<RootLayout className="gap-2">
+  <div>
+    <GlassButton href="/">
+      <ArrowLeftIcon className="size-4" />Go back
+    </GlassButton>
+  </div>
+  <div>
+    <h1 class="my-2 text-xl font-bold">Project list ({projects.length})</h1>
+    <div class="flex flex-wrap gap-4 sm:w-fit">
+      {
+        projects.map((project) => (
+          <Card>
+            <CardHeader>
+              <CardImage {...project.image} />
+              <CardTitle>{project.name}</CardTitle>
+              <CardDescription>{project.description}</CardDescription>
+            </CardHeader>
+            <CardSkills>
+              {project.techStack.map((tech) => (
+                <SVGTooltip client:visible content={tech.title}>
+                  <tech.icon />
+                </SVGTooltip>
+              ))}
+            </CardSkills>
+            <CardFooter>
+              <CardGithubLink githubURL={project.githubURL} />
+              <CardProjectLink projectURL={project.projectURL} />
+            </CardFooter>
+          </Card>
+        ))
+      }
+    </div>
+  </div>
+</RootLayout>
