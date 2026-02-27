@@ -59,6 +59,21 @@ const projects: Project[] = [
     projectURL: "https://swift-tracker.net",
   },
   {
+    name: "Portfolio Website",
+    description: `Simple portfolio website
+    for demonstrating technical skills and projects.`,
+    image: { src: portfolioImage, alt: "Portfolio Website" },
+    techStack: [
+      { icon: TypescriptIcon, title: "TypeScript" },
+      { icon: TailwindIcon, title: "TailwindCSS" },
+      { icon: ReactIcon, title: "React" },
+      { icon: AstroIcon, title: "Astro" },
+    ],
+    badges: [PersonalBadge],
+    githubURL: "https://github.com/mrdsx/portfolio-website",
+    projectURL: "https://mrdsx.vercel.app",
+  },
+  {
     name: "Olympiad Preparation",
     description: `Olympiad Preparation is production-ready
     and actively maintained app, developed for preparing to
@@ -74,21 +89,6 @@ const projects: Project[] = [
     ],
     badges: [ProprietaryBadge],
     projectURL: "https://olympiad-preparation.vercel.app",
-  },
-  {
-    name: "Portfolio Website",
-    description: `Simple portfolio website
-    for demonstrating technical skills and projects.`,
-    image: { src: portfolioImage, alt: "Portfolio Website" },
-    techStack: [
-      { icon: TypescriptIcon, title: "TypeScript" },
-      { icon: TailwindIcon, title: "TailwindCSS" },
-      { icon: ReactIcon, title: "React" },
-      { icon: AstroIcon, title: "Astro" },
-    ],
-    badges: [PersonalBadge],
-    githubURL: "https://github.com/mrdsx/portfolio-website",
-    projectURL: "https://mrdsx.vercel.app",
   },
 ];
 
