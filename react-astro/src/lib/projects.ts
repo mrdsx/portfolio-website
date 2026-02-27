@@ -3,10 +3,15 @@ import FastAPIIcon from "@/components/icons/fastapi";
 import GithubActionsIcon from "@/components/icons/github-actions";
 import PythonIcon from "@/components/icons/python";
 import ReactIcon from "@/components/icons/react";
+import SvelteIcon from "@/components/icons/svelte";
 import TailwindIcon from "@/components/icons/tailwindcss";
 import TypescriptIcon from "@/components/icons/typescript";
-
-import { getCDNImageURL } from "./utils";
+import {
+  ovioImage,
+  portfolioImage,
+  swiftTrackerImage,
+  wordGameImage,
+} from "@/lib/images";
 
 type Project = {
   name: string;
@@ -20,12 +25,20 @@ type Project = {
   projectURL: string;
 };
 
-const IMG_HEIGHT = 200;
-const swiftTrackerImage = getCDNImageURL("swift-tracker_guijc3", IMG_HEIGHT);
-const ovioImage = getCDNImageURL("ovio_irqhyp", IMG_HEIGHT);
-const portfolioImage = getCDNImageURL("portfolio-website_r0cuwy", IMG_HEIGHT);
-
 const projects: Project[] = [
+  {
+    name: "Word Game",
+    description: `Web game where user must come up with words
+    and each new word has to start with last letter from previous word.`,
+    image: { src: wordGameImage, alt: "Word Game" },
+    techStack: [
+      { icon: TypescriptIcon, title: "TypeScript" },
+      { icon: TailwindIcon, title: "TailwindCSS" },
+      { icon: SvelteIcon, title: "Svelte" },
+    ],
+    projectURL: "https://sunny-sunburst-407336.netlify.app",
+    githubURL: "https://github.com/mrdsx/word-game",
+  },
   {
     name: "Swift Tracker",
     description: `International payment tracker for fast
