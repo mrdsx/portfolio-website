@@ -2,7 +2,7 @@ import GithubIcon from "@/components/icons/github";
 import GmailIcon from "@/components/icons/gmail";
 import { Button } from "@/components/ui/button";
 
-const ContactsContent = () => (
+const Contacts = () => (
   <>
     <Button size="lg" asChild>
       <a href="https://github.com/mrdsx" target="_blank">
@@ -17,4 +17,4 @@ const ContactsContent = () => (
   </>
 );
 
-export default ContactsContent;
+export default Contacts;
