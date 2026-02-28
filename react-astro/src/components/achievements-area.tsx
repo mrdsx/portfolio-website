@@ -21,7 +21,7 @@ const AchievementsArea = () => {
   const totalCount = Object.keys(achievements).length;
 
   function onAchievementFinish(): void {
-    toastAchievement("visit-achievements-page");
+    setTimeout(() => toastAchievement("visit-achievements-page"), 500);
   }
 
   useEffect(() => {
