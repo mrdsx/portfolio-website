@@ -42,7 +42,7 @@ const AchievementsArea = () => {
       <p>
         {completedCount}/{totalCount} completed
       </p>
-      <ul className="flex flex-wrap gap-4">
+      <ul className="flex flex-wrap gap-2">
         {Object.entries(achievements).map(([id, data]) => {
           const isCompleted = isAchievementCompleted(id as AchievementId);
 
