@@ -2,7 +2,7 @@
 import PersonalBadge from "@/components/badges/personal";
 import ProprietaryBadge from "@/components/badges/proprietary";
 import ToyProjectBadge from "@/components/badges/toy-project";
-import GlassButton from "@/components/glass-button";
+import GoBackButton from "@/components/go-back-button";
 import RootLayout from "@/components/root-layout.astro";
 import SVGTooltip from "@/components/svg-tooltip";
 import {
@@ -18,13 +18,10 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { projects } from "@/lib/projects";
-import { ArrowLeftIcon } from "lucide-react";
 ---
 
-<RootLayout className="space-y-4">
-  <GlassButton href="/">
-    <ArrowLeftIcon className="size-4" />Go back
-  </GlassButton>
+<RootLayout className="flex flex-col items-start gap-4">
+  <GoBackButton href="/" />
   <div class="space-y-2">
     <h1 class="text-xl font-bold">Project list ({projects.length})</h1>
     <section class="mb-4 flex flex-col">

@@ -1,7 +1,7 @@
 @reference "../../globals.css";
 
 .section {
-  @apply flex flex-col gap-2;
+  @apply flex flex-col items-start gap-2;
 }
 
 .sectionHeading {
