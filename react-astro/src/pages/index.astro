@@ -1,12 +1,16 @@
 ---
+import AchievementsButton from "@/components/achievements-button";
 import Footer from "@/components/footer.astro";
 import Header from "@/components/header/header.astro";
 import Main from "@/components/main/main.astro";
 import RootLayout from "@/components/root-layout.astro";
+import { Toaster } from "@/components/ui/sonner";
 ---
 
 <RootLayout>
   <Header />
   <Main />
   <Footer />
+  <AchievementsButton client:idle />
+  <Toaster client:idle />
 </RootLayout>

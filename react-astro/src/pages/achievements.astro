@@ -1,0 +1,11 @@
+---
+import AchievementsArea from "@/components/achievements-area";
+import GoBackButton from "@/components/go-back-button";
+import RootLayout from "@/components/root-layout.astro";
+---
+
+<RootLayout className="items-start gap-4">
+  <GoBackButton href="/" />
+  <h1 class="text-xl font-bold">Achievements</h1>
+  <AchievementsArea client:load />
+</RootLayout>
