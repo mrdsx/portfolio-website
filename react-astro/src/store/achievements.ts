@@ -1,6 +1,6 @@
 import { persistentAtom } from "@nanostores/persistent";
 
-type AchievementId = "click-all-skills";
+type AchievementId = "click-all-skills" | "visit-achievements-page";
 
 const achievements: Record<
   AchievementId,
@@ -9,6 +9,10 @@ const achievements: Record<
   "click-all-skills": {
     title: "Infinity Gauntlet",
     description: "Click all skills on home page",
+  },
+  "visit-achievements-page": {
+    title: "what is this place?",
+    description: "Visit achievements page",
   },
 };
 
@@ -21,9 +25,13 @@ const $completedAchievements = persistentAtom<AchievementId[]>(
   },
 );
 
-const finishAchievement = (id: AchievementId): void => {
+const finishAchievement = (
+  id: AchievementId,
+  onAchievementFinish?: () => void,
+): void => {
   const achievementExists = $completedAchievements.get().includes(id);
   if (!achievementExists) {
+    onAchievementFinish?.();
     $completedAchievements.set([...$completedAchievements.get(), id]);
   }
 };

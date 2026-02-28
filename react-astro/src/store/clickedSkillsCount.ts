@@ -12,12 +12,13 @@ const registerSkill = (): void => {
   $clickedSkillsCount.set({ ...$clickedSkillsCount.get(), max: newMax });
 };
 
-const incrementClickedSkillsCount = (onAchievementFinish: () => void): void => {
+const incrementClickedSkillsCount = (
+  onAchievementFinish?: () => void,
+): void => {
   const newCount = $clickedSkillsCount.get().count + 1;
   const max = $clickedSkillsCount.get().max;
   if (newCount >= max && !isAchievementCompleted("click-all-skills")) {
-    onAchievementFinish();
-    finishAchievement("click-all-skills");
+    finishAchievement("click-all-skills", onAchievementFinish);
   }
   $clickedSkillsCount.set({
     ...$clickedSkillsCount.get(),

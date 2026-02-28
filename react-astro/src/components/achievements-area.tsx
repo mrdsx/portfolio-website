@@ -6,10 +6,11 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { cn } from "@/lib/utils";
+import { cn, toastAchievement } from "@/lib/utils";
 import {
   type AchievementId,
   achievements,
+  finishAchievement,
   getCompletedAchievementsCount,
   isAchievementCompleted,
 } from "@/store/achievements";
@@ -19,11 +20,16 @@ const AchievementsArea = () => {
   const completedCount = getCompletedAchievementsCount();
   const totalCount = Object.keys(achievements).length;
 
+  function onAchievementFinish(): void {
+    toastAchievement("visit-achievements-page");
+  }
+
   useEffect(() => {
     if (completedCount === 0) {
       document.location.href = "/";
     } else {
       setIsClient(true);
+      finishAchievement("visit-achievements-page", onAchievementFinish);
     }
   }, []);
 

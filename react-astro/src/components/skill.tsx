@@ -1,9 +1,8 @@
 import { type VariantProps } from "class-variance-authority";
 import { useEffect, useState } from "react";
-import { toast } from "sonner";
 
 import GlassButton, { glassButtonVariants } from "@/components/glass-button";
-import { achievements } from "@/store/achievements";
+import { toastAchievement } from "@/lib/utils";
 import {
   decrementClickedSkillsCount,
   incrementClickedSkillsCount,
@@ -17,7 +16,7 @@ const Skill = ({
   const [isClicked, setIsClicked] = useState<boolean>(false);
 
   const onAchievementFinish = (): void => {
-    toast.success(`New achievement: ${achievements["click-all-skills"].title}`);
+    toastAchievement("click-all-skills");
   };
 
   useEffect(() => {
