@@ -11,7 +11,7 @@ const achievements: Record<
     description: "Click all skills on home page",
   },
   "visit-achievements-page": {
-    title: "what is this place?",
+    title: "What is this place?",
     description: "Visit achievements page",
   },
 };
@@ -44,11 +44,16 @@ const getCompletedAchievementsCount = (): number => {
   return $completedAchievements.get().length;
 };
 
+const resetCompletedAchievements = (): void => {
+  $completedAchievements.set([]);
+};
+
 export {
   $completedAchievements,
   achievements,
   finishAchievement,
   getCompletedAchievementsCount,
   isAchievementCompleted,
+  resetCompletedAchievements,
   type AchievementId,
 };

@@ -1,6 +1,7 @@
 ---
 import AchievementsArea from "@/components/achievements-area";
 import GoBackButton from "@/components/go-back-button";
+import ResetAchievementsButton from "@/components/reset-achievements-button";
 import RootLayout from "@/components/root-layout.astro";
 ---
 
@@ -8,4 +9,7 @@ import RootLayout from "@/components/root-layout.astro";
   <GoBackButton href="/" />
   <h1 class="text-xl font-bold">Achievements</h1>
   <AchievementsArea client:load />
+  <div class="mt-auto">
+    <ResetAchievementsButton client:idle />
+  </div>
 </RootLayout>
