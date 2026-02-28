@@ -17,7 +17,7 @@ const Skill = ({
   const [isClicked, setIsClicked] = useState<boolean>(false);
 
   const onAchievementFinish = (): void => {
-    toast.success(`New achievement: ${achievements["click-all-skills"]}`);
+    toast.success(`New achievement: ${achievements["click-all-skills"].title}`);
   };
 
   useEffect(() => {
