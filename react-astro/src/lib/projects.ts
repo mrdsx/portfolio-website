@@ -4,11 +4,14 @@ import ToyProjectBadge from "@/components/badges/toy-project";
 import AstroIcon from "@/components/icons/astro";
 import FastAPIIcon from "@/components/icons/fastapi";
 import GithubActionsIcon from "@/components/icons/github-actions";
+import NetlifyIcon from "@/components/icons/netlify";
+import NextJSIcon from "@/components/icons/next";
 import PythonIcon from "@/components/icons/python";
 import ReactIcon from "@/components/icons/react";
 import SvelteIcon from "@/components/icons/svelte";
 import TailwindIcon from "@/components/icons/tailwindcss";
 import TypescriptIcon from "@/components/icons/typescript";
+import VercelIcon from "@/components/icons/vercel";
 import {
   ovioImage,
   portfolioImage,
@@ -39,6 +42,7 @@ const projects: Project[] = [
       { icon: TypescriptIcon, title: "TypeScript" },
       { icon: TailwindIcon, title: "TailwindCSS" },
       { icon: SvelteIcon, title: "Svelte" },
+      { icon: NetlifyIcon, title: "Netlify" },
     ],
     badges: [ToyProjectBadge],
     projectURL: "https://sunny-sunburst-407336.netlify.app",
@@ -54,6 +58,7 @@ const projects: Project[] = [
       { icon: TailwindIcon, title: "TailwindCSS" },
       { icon: ReactIcon, title: "React" },
       { icon: AstroIcon, title: "Astro" },
+      { icon: VercelIcon, title: "Vercel" },
     ],
     badges: [ProprietaryBadge],
     projectURL: "https://swift-tracker.net",
@@ -68,6 +73,7 @@ const projects: Project[] = [
       { icon: TailwindIcon, title: "TailwindCSS" },
       { icon: ReactIcon, title: "React" },
       { icon: AstroIcon, title: "Astro" },
+      { icon: VercelIcon, title: "Vercel" },
     ],
     badges: [PersonalBadge],
     githubURL: "https://github.com/mrdsx/portfolio-website",
@@ -83,8 +89,10 @@ const projects: Project[] = [
       { icon: TypescriptIcon, title: "TypeScript" },
       { icon: TailwindIcon, title: "TailwindCSS" },
       { icon: ReactIcon, title: "React" },
+      { icon: NextJSIcon, title: "Next.js" },
       { icon: PythonIcon, title: "Python" },
       { icon: FastAPIIcon, title: "FastAPI" },
+      { icon: VercelIcon, title: "Vercel" },
       { icon: GithubActionsIcon, title: "Github Actions" },
     ],
     badges: [ProprietaryBadge],

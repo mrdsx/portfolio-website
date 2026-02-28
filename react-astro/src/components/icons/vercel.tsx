@@ -1,14 +1,35 @@
-import SVG from "@/components/svg";
-
 const VercelIcon = () => (
-  <SVG xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-    <path
-      fillRule="nonzero"
-      fill="currentColor"
-      fillOpacity={1}
-      d="M63.984 17.184 127.964 128H0Zm0 0"
-    />
-  </SVG>
+  <svg
+    data-testid="geist-icon"
+    stroke-linejoin="round"
+    viewBox="0 0 16 16"
+    width="16"
+    color="#000"
+  >
+    <g clip-path="url(#clip0_872_3186)">
+      <circle
+        cx="8"
+        cy="8"
+        r="7.25"
+        fill="currentColor"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></circle>
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M8 4.5L11.5 10.625H4.5L8 4.5Z"
+        fill="white"
+      ></path>
+    </g>
+    <defs>
+      <clipPath id="clip0_872_3186">
+        <rect width="16" height="16" fill="white"></rect>
+      </clipPath>
+    </defs>
+  </svg>
 );
 
 export default VercelIcon;
