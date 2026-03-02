@@ -45,7 +45,7 @@ const projects: Project[] = [
       { icon: NetlifyIcon, title: "Netlify" },
     ],
     badges: [ToyProjectBadge],
-    projectURL: "https://sunny-sunburst-407336.netlify.app",
+    projectURL: "https://word-game-mrdsx.netlify.app",
     githubURL: "https://github.com/mrdsx/word-game",
   },
   {
