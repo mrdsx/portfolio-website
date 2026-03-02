@@ -3,11 +3,11 @@ import ProprietaryBadge from "@/components/badges/proprietary";
 import ToyProjectBadge from "@/components/badges/toy-project";
 import AstroIcon from "@/components/icons/astro";
 import FastAPIIcon from "@/components/icons/fastapi";
-import GithubActionsIcon from "@/components/icons/github-actions";
 import NetlifyIcon from "@/components/icons/netlify";
 import NextJSIcon from "@/components/icons/next";
 import PythonIcon from "@/components/icons/python";
 import ReactIcon from "@/components/icons/react";
+import RenderIcon from "@/components/icons/render";
 import SvelteIcon from "@/components/icons/svelte";
 import TailwindIcon from "@/components/icons/tailwindcss";
 import TypescriptIcon from "@/components/icons/typescript";
@@ -93,7 +93,7 @@ const projects: Project[] = [
       { icon: PythonIcon, title: "Python" },
       { icon: FastAPIIcon, title: "FastAPI" },
       { icon: VercelIcon, title: "Vercel" },
-      { icon: GithubActionsIcon, title: "Github Actions" },
+      { icon: RenderIcon, title: "Render" },
     ],
     badges: [ProprietaryBadge],
     projectURL: "https://olympiad-preparation.vercel.app",
