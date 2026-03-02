@@ -2,7 +2,7 @@ import SVG from "@/components/svg";
 
 const NextJSIcon = () => (
   <SVG xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-    <g clip-path="url(#a)">
+    <g clipPath="url(#a)">
       <path
         fill="#000"
         d="M50 99.999c27.614 0 50-22.386 50-50s-22.386-50-50-50-50 22.386-50 50 22.386 50 50 50"
@@ -22,8 +22,8 @@ const NextJSIcon = () => (
         y2="89.166"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#fff" />
-        <stop offset="1" stop-color="#fff" stop-opacity="0" />
+        <stop stopColor="#fff" />
+        <stop offset="1" stopColor="#fff" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="c"
@@ -33,8 +33,8 @@ const NextJSIcon = () => (
         y2="59.374"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#fff" />
-        <stop offset="1" stop-color="#fff" stop-opacity="0" />
+        <stop stopColor="#fff" />
+        <stop offset="1" stopColor="#fff" stopOpacity="0" />
       </linearGradient>
       <clipPath id="a">
         <path fill="#fff" d="M0 0h100v100H0z" />
