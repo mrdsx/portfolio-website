@@ -10,7 +10,6 @@ import NetlifySkill from "@/components/skills/netlify";
 import PostgreSQLSkill from "@/components/skills/postgresql";
 import PyTestSkill from "@/components/skills/pytest";
 import PythonSkill from "@/components/skills/python";
-import RailwaySkill from "@/components/skills/railway";
 import ReactSkill from "@/components/skills/react";
 import RenderSkill from "@/components/skills/render";
 import SQLiteSkill from "@/components/skills/sqlite";
@@ -36,8 +35,6 @@ import styles from "./Main.module.css";
       <ReactSkill client:load />
       <NextJSSkill client:load />
       <AstroSkill client:load />
-      <VitestSkill client:load />
-      <CypressSkill client:load />
     </div>
   </div>
   <div class="flex flex-col gap-2">
@@ -47,17 +44,18 @@ import styles from "./Main.module.css";
       <FastAPISkill client:load />
       <PostgreSQLSkill client:load />
       <SQLiteSkill client:load />
-      <PyTestSkill client:load />
     </div>
   </div>
   <div class="flex flex-col gap-2">
-    <h3 class="min-w-30 font-semibold">Deployment</h3>
+    <h3 class="min-w-30 font-semibold">Automation & Deployment</h3>
     <div class="flex flex-wrap gap-2">
       <GithubActionsSkill client:load />
       <VercelSkill client:load />
       <NetlifySkill client:load />
       <RenderSkill client:load />
-      <RailwaySkill client:load />
+      <VitestSkill client:load />
+      <CypressSkill client:load />
+      <PyTestSkill client:load />
     </div>
   </div>
 </section>
