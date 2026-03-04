@@ -3,6 +3,7 @@ import ProprietaryBadge from "@/components/badges/proprietary";
 import ToyProjectBadge from "@/components/badges/toy-project";
 import AstroIcon from "@/components/icons/astro";
 import FastAPIIcon from "@/components/icons/fastapi";
+import FirebaseIcon from "@/components/icons/firebase";
 import NetlifyIcon from "@/components/icons/netlify";
 import NextJSIcon from "@/components/icons/next";
 import PythonIcon from "@/components/icons/python";
@@ -42,6 +43,7 @@ const projects: Project[] = [
       { icon: TypescriptIcon, title: "TypeScript" },
       { icon: TailwindIcon, title: "TailwindCSS" },
       { icon: SvelteIcon, title: "Svelte" },
+      { icon: FirebaseIcon, title: "Firebase" },
       { icon: NetlifyIcon, title: "Netlify" },
     ],
     badges: [ToyProjectBadge],
