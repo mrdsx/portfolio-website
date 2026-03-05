@@ -4,7 +4,6 @@ import ToyProjectBadge from "@/components/badges/toy-project";
 import AstroIcon from "@/components/icons/astro";
 import FastAPIIcon from "@/components/icons/fastapi";
 import FirebaseIcon from "@/components/icons/firebase";
-import NetlifyIcon from "@/components/icons/netlify";
 import NextJSIcon from "@/components/icons/next";
 import PythonIcon from "@/components/icons/python";
 import ReactIcon from "@/components/icons/react";
@@ -44,10 +43,10 @@ const projects: Project[] = [
       { icon: TailwindIcon, title: "TailwindCSS" },
       { icon: SvelteIcon, title: "Svelte" },
       { icon: FirebaseIcon, title: "Firebase" },
-      { icon: NetlifyIcon, title: "Netlify" },
+      { icon: VercelIcon, title: "Vercel" },
     ],
     badges: [ToyProjectBadge],
-    projectURL: "https://classic-word-game.netlify.app",
+    projectURL: "https://classic-word-game.vercel.app",
     githubURL: "https://github.com/mrdsx/word-game",
   },
   {
