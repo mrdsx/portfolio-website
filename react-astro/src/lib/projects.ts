@@ -35,13 +35,13 @@ type Project = {
 const projects: Project[] = [
   {
     name: "Word Game",
-    description: `Web game where user must come up with words
-    and each new word has to start with last letter from previous word.`,
+    description: `Web game based on "Last Letter First" game rules with serverless backend and user authentication.`,
     image: { src: wordGameImage, alt: "Word Game" },
     techStack: [
       { icon: TypescriptIcon, title: "TypeScript" },
       { icon: TailwindIcon, title: "TailwindCSS" },
       { icon: SvelteIcon, title: "Svelte" },
+      { icon: AstroIcon, title: "Astro (backend)" },
       { icon: FirebaseIcon, title: "Firebase" },
       { icon: VercelIcon, title: "Vercel" },
     ],
@@ -90,9 +90,9 @@ const projects: Project[] = [
       { icon: TypescriptIcon, title: "TypeScript" },
       { icon: TailwindIcon, title: "TailwindCSS" },
       { icon: ReactIcon, title: "React" },
-      { icon: NextJSIcon, title: "Next.js" },
+      { icon: NextJSIcon, title: "Next.js (modern backend)" },
       { icon: PythonIcon, title: "Python" },
-      { icon: FastAPIIcon, title: "FastAPI" },
+      { icon: FastAPIIcon, title: "FastAPI (legacy backend)" },
       { icon: VercelIcon, title: "Vercel" },
       { icon: RenderIcon, title: "Render" },
     ],
