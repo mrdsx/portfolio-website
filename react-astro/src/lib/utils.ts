@@ -14,8 +14,13 @@ const getCDNImageURL = (publicId: string, maxHeight: number): string => {
   return `https://res.cloudinary.com/${CLOUD_NAME}/image/upload/q_90,f_auto,h_${maxHeight}/${publicId}`;
 };
 
+const randomChoice = (choices: unknown[]): unknown => {
+  const randomIndex = Math.floor(Math.random() * choices.length);
+  return choices[randomIndex];
+};
+
 const toastAchievement = (id: AchievementId): void => {
   toast.success(`New achievement: ${achievements[id].title}`);
 };
 
-export { cn, getCDNImageURL, toastAchievement };
+export { cn, getCDNImageURL, randomChoice, toastAchievement };

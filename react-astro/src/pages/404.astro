@@ -1,8 +1,11 @@
 ---
 import RootLayout from "@/components/root-layout.astro";
+import { randomChoice } from "@/lib/utils";
+
+const returnValue = randomChoice(["void", "null", "undefined"]);
 ---
 
-<RootLayout className="py-30 space-y-3 text-center">
-  <h1 class="font-semibold text-2xl">404</h1>
-  <p>Error: page expectedly returned undefined 0_0</p>
+<RootLayout className="space-y-3 py-30 text-center">
+  <h1 class="text-2xl font-semibold">404</h1>
+  <p>Error: page expectedly returned {returnValue} 0_0</p>
 </RootLayout>
