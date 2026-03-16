@@ -67,7 +67,7 @@ const CardProjectLink = ({ projectURL }: { projectURL: string }) => (
   <Button className={LINK_CLASSNAME} asChild>
     <a href={projectURL}>
       <EyeIcon />
-      View
+      Live
     </a>
   </Button>
 );

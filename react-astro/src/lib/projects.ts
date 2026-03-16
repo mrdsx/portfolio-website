@@ -7,11 +7,9 @@ import FirebaseIcon from "@/components/icons/firebase";
 import NextJSIcon from "@/components/icons/next";
 import PythonIcon from "@/components/icons/python";
 import ReactIcon from "@/components/icons/react";
-import RenderIcon from "@/components/icons/render";
 import SvelteIcon from "@/components/icons/svelte";
 import TailwindIcon from "@/components/icons/tailwindcss";
 import TypescriptIcon from "@/components/icons/typescript";
-import VercelIcon from "@/components/icons/vercel";
 import {
   ovioImage,
   portfolioImage,
@@ -35,7 +33,8 @@ type Project = {
 const projects: Project[] = [
   {
     name: "Word Game",
-    description: `Web game based on "Last Letter First" game rules with serverless backend and user authentication.`,
+    description: `A web game, based on rules of "Words chain" game and
+    built with serverless backend and user authentication.`,
     image: { src: wordGameImage, alt: "Word Game" },
     techStack: [
       { icon: TypescriptIcon, title: "TypeScript" },
@@ -43,7 +42,6 @@ const projects: Project[] = [
       { icon: SvelteIcon, title: "Svelte" },
       { icon: AstroIcon, title: "Astro (backend)" },
       { icon: FirebaseIcon, title: "Firebase" },
-      { icon: VercelIcon, title: "Vercel" },
     ],
     badges: [ToyProjectBadge],
     projectURL: "https://classic-word-game.vercel.app",
@@ -51,30 +49,28 @@ const projects: Project[] = [
   },
   {
     name: "Swift Tracker",
-    description: `International payment tracker for fast
-    transactions look up within SWIFT GPI network.`,
+    description: `An international payment tracker for fast
+    transactions look up within the SWIFT GPI network.`,
     image: { src: swiftTrackerImage, alt: "Swift Tracker" },
     techStack: [
       { icon: TypescriptIcon, title: "TypeScript" },
       { icon: TailwindIcon, title: "TailwindCSS" },
       { icon: ReactIcon, title: "React" },
       { icon: AstroIcon, title: "Astro" },
-      { icon: VercelIcon, title: "Vercel" },
     ],
     badges: [ProprietaryBadge],
     projectURL: "https://swift-tracker.net",
   },
   {
     name: "Portfolio Website",
-    description: `Simple portfolio website
-    for demonstrating technical skills and projects.`,
+    description: `A website that highlights my experience
+    and the outcome of building software.`,
     image: { src: portfolioImage, alt: "Portfolio Website" },
     techStack: [
       { icon: TypescriptIcon, title: "TypeScript" },
       { icon: TailwindIcon, title: "TailwindCSS" },
       { icon: ReactIcon, title: "React" },
       { icon: AstroIcon, title: "Astro" },
-      { icon: VercelIcon, title: "Vercel" },
     ],
     badges: [PersonalBadge],
     githubURL: "https://github.com/mrdsx/portfolio-website",
@@ -82,9 +78,8 @@ const projects: Project[] = [
   },
   {
     name: "Olympiad Preparation",
-    description: `Olympiad Preparation is production-ready
-    and actively maintained app, developed for preparing to
-    olympiad \"ОВИО Наше наследие\".`,
+    description: `Fullstack web application,
+    developed for extensive preparation to the olympiad "ОВИО Наше наследие" (logo is above).`,
     image: { src: ovioImage, alt: "Olympiad Preparation" },
     techStack: [
       { icon: TypescriptIcon, title: "TypeScript" },
@@ -93,8 +88,6 @@ const projects: Project[] = [
       { icon: NextJSIcon, title: "Next.js (modern backend)" },
       { icon: PythonIcon, title: "Python" },
       { icon: FastAPIIcon, title: "FastAPI (legacy backend)" },
-      { icon: VercelIcon, title: "Vercel" },
-      { icon: RenderIcon, title: "Render" },
     ],
     badges: [ProprietaryBadge],
     projectURL: "https://olympiad-preparation.vercel.app",
