@@ -1,21 +1,17 @@
 ---
-import FastAPISkill from "@/components/skills/fastapi";
-import PythonSkill from "@/components/skills/python";
 import ReactSkill from "@/components/skills/react";
-import TailwindSkill from "@/components/skills/tailwindcss";
 import TypescriptSkill from "@/components/skills/typescript";
 
+import FirebaseSkill from "../skills/firebase";
 import styles from "./Main.module.css";
 ---
 
 <section class={styles.section}>
   <h2 class={styles.sectionHeading}>About me</h2>
   <div class="flex flex-wrap items-center gap-x-1 leading-8">
-    Fullstack developer, specializing in interactive full-fledged web apps with
+    Fullstack developer, specializing in interactive web apps with
     <ReactSkill client:load size="sm" />,
-    <TypescriptSkill client:load size="sm" />,
-    <TailwindSkill client:load size="sm" />,
-    <PythonSkill client:load size="sm" /> and
-    <FastAPISkill client:load size="sm" />.
+    <TypescriptSkill client:load size="sm" /> and
+    <FirebaseSkill client:load size="sm" />.
   </div>
 </section>

@@ -1,5 +1,0 @@
-@reference "../../globals.css";
-
-.icon {
-  @apply rounded-[2px];
-}
