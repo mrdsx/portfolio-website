@@ -5,13 +5,14 @@ import { twMerge } from "tailwind-merge";
 import { type AchievementId, achievements } from "@/store/achievements";
 
 const CLOUD_NAME = "drkpov52o";
+const IMG_HEIGHT = 200;
 
 const cn = (...inputs: ClassValue[]): string => {
   return twMerge(clsx(inputs));
 };
 
-const getCDNImageURL = (publicId: string, maxHeight: number): string => {
-  return `https://res.cloudinary.com/${CLOUD_NAME}/image/upload/q_90,f_auto,h_${maxHeight}/${publicId}`;
+const getCDNImageURL = (publicId: string): string => {
+  return `https://res.cloudinary.com/${CLOUD_NAME}/image/upload/q_90,f_auto,h_${IMG_HEIGHT}/${publicId}`;
 };
 
 const randomChoice = (choices: unknown[]): unknown => {

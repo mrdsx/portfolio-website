@@ -4,6 +4,7 @@ import ToyProjectBadge from "@/components/badges/toy-project";
 import AstroIcon from "@/components/icons/astro";
 import FastAPIIcon from "@/components/icons/fastapi";
 import FirebaseIcon from "@/components/icons/firebase";
+import GithubActionsIcon from "@/components/icons/github-actions";
 import NextJSIcon from "@/components/icons/next";
 import PythonIcon from "@/components/icons/python";
 import ReactIcon from "@/components/icons/react";
@@ -13,6 +14,7 @@ import TypescriptIcon from "@/components/icons/typescript";
 import {
   ovioImage,
   portfolioImage,
+  pyAppCLIImage,
   swiftTrackerImage,
   wordGameImage,
 } from "@/lib/images";
@@ -31,6 +33,19 @@ type Project = {
 };
 
 const projects: Project[] = [
+  {
+    name: "PyApp CLI",
+    description:
+      "A Python CLI for scaffolding Python projects with configurable tech stack (libraries/frameworks).",
+    image: { src: pyAppCLIImage, alt: "PyApp CLI" },
+    techStack: [
+      { icon: PythonIcon, title: "Python" },
+      { icon: GithubActionsIcon, title: "Github Actions" },
+    ],
+    badges: [PersonalBadge],
+    projectURL: "https://pypi.org/project/pyapp-cli",
+    githubURL: "https://github.com/mrdsx/pyapp-cli",
+  },
   {
     name: "Word Game",
     description: `A web game, based on rules of "Words chain" game and
@@ -79,7 +94,7 @@ const projects: Project[] = [
   },
   {
     name: "Olympiad Preparation",
-    description: `Fullstack web application,
+    description: `A fullstack web application,
     developed for extensive preparation to the olympiad "ОВИО Наше наследие" (logo is above).`,
     image: { src: ovioImage, alt: "Olympiad Preparation" },
     techStack: [
