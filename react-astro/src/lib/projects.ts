@@ -8,6 +8,7 @@ import GithubActionsIcon from "@/components/icons/github-actions";
 import NextJSIcon from "@/components/icons/next";
 import PythonIcon from "@/components/icons/python";
 import ReactIcon from "@/components/icons/react";
+import RedisIcon from "@/components/icons/redis";
 import SvelteIcon from "@/components/icons/svelte";
 import TailwindIcon from "@/components/icons/tailwindcss";
 import TypescriptIcon from "@/components/icons/typescript";
@@ -23,16 +24,32 @@ type Project = {
   name: string;
   description: string;
   image: {
-    src: string;
+    src?: string;
     alt: string;
   };
   techStack: { icon: () => React.ReactElement; title: string }[];
   badges: (() => React.ReactElement)[];
   githubURL?: string;
-  projectURL: string;
+  projectURL?: string;
 };
 
 const projects: Project[] = [
+  {
+    name: "mrdsx observer",
+    description: "A public dashboard for monitoring my projects statuses.",
+    image: { alt: "mrdsx observer" },
+    techStack: [
+      { icon: TypescriptIcon, title: "TypeScript" },
+      { icon: TailwindIcon, title: "TailwindCSS" },
+      { icon: NextJSIcon, title: "Next.js" },
+      { icon: PythonIcon, title: "Python" },
+      { icon: FastAPIIcon, title: " FastAPI" },
+      { icon: FirebaseIcon, title: "Firebase" },
+      { icon: RedisIcon, title: "Redis" },
+    ],
+    badges: [PersonalBadge],
+    githubURL: "https://github.com/mrdsx/mrdsx-observer",
+  },
   {
     name: "PyApp CLI",
     description:
@@ -100,10 +117,9 @@ const projects: Project[] = [
     techStack: [
       { icon: TypescriptIcon, title: "TypeScript" },
       { icon: TailwindIcon, title: "TailwindCSS" },
-      { icon: ReactIcon, title: "React" },
-      { icon: NextJSIcon, title: "Next.js (modern backend)" },
+      { icon: NextJSIcon, title: "Next.js" },
       { icon: PythonIcon, title: "Python" },
-      { icon: FastAPIIcon, title: "FastAPI (legacy backend)" },
+      { icon: FastAPIIcon, title: "FastAPI" },
     ],
     badges: [ProprietaryBadge],
     projectURL: "https://olympiad-preparation.vercel.app",

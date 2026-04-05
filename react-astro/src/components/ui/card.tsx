@@ -63,14 +63,25 @@ const CardGithubLink = ({ githubURL }: { githubURL?: string }) => {
   );
 };
 
-const CardProjectLink = ({ projectURL }: { projectURL: string }) => (
-  <Button className={LINK_CLASSNAME} asChild>
-    <a href={projectURL}>
+const CardProjectLink = ({ projectURL }: { projectURL?: string }) => {
+  if (projectURL !== undefined) {
+    return (
+      <Button className={LINK_CLASSNAME} asChild>
+        <a href={projectURL}>
+          <EyeIcon />
+          Live
+        </a>
+      </Button>
+    );
+  }
+
+  return (
+    <Button className={LINK_CLASSNAME} disabled aria-disabled>
       <EyeIcon />
-      Live
-    </a>
-  </Button>
-);
+      Live (soon)
+    </Button>
+  );
+};
 
 export {
   Card,

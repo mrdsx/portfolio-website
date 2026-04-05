@@ -3,12 +3,14 @@ import AstroSkill from "@/components/skills/astro";
 import CSSSkill from "@/components/skills/css";
 import CypressSkill from "@/components/skills/cypress";
 import FastAPISkill from "@/components/skills/fastapi";
+import FirebaseSkill from "@/components/skills/firebase";
 import GithubActionsSkill from "@/components/skills/github-actions";
 import HTMLSkill from "@/components/skills/html";
 import PostgreSQLSkill from "@/components/skills/postgresql";
 import PyTestSkill from "@/components/skills/pytest";
 import PythonSkill from "@/components/skills/python";
 import ReactSkill from "@/components/skills/react";
+import RedisSkill from "@/components/skills/redis";
 import RenderSkill from "@/components/skills/render";
 import SQLiteSkill from "@/components/skills/sqlite";
 import TailwindSkill from "@/components/skills/tailwindcss";
@@ -17,7 +19,7 @@ import VercelSkill from "@/components/skills/vercel";
 import VitestSkill from "@/components/skills/vitest";
 
 import NextJSSkill from "@/components/skills/next";
-import FirebaseSkill from "../skills/firebase";
+import DockerSkill from "../skills/docker";
 import styles from "./Main.module.css";
 ---
 
@@ -42,6 +44,7 @@ import styles from "./Main.module.css";
       <FastAPISkill client:load />
       <PostgreSQLSkill client:load />
       <SQLiteSkill client:load />
+      <RedisSkill client:load />
       <FirebaseSkill client:load />
     </div>
   </div>
@@ -49,6 +52,7 @@ import styles from "./Main.module.css";
     <h3 class="min-w-30 font-semibold">Automation & Deployment</h3>
     <div class="flex flex-wrap gap-2">
       <GithubActionsSkill client:load />
+      <DockerSkill client:load />
       <VercelSkill client:load />
       <RenderSkill client:load />
       <VitestSkill client:load />
