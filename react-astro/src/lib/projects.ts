@@ -47,6 +47,7 @@ const projects: Project[] = [
 			{ icon: FastAPIIcon, title: " FastAPI" },
 			{ icon: FirebaseIcon, title: "Firebase" },
 			{ icon: RedisIcon, title: "Redis" },
+			{ icon: GithubActionsIcon, title: "GitHub Actions" },
 		],
 		badges: [PersonalBadge],
 		githubURL: "https://github.com/mrdsx/mrdsx-observer",
@@ -59,7 +60,7 @@ const projects: Project[] = [
 		image: { src: pyAppCLIImage, alt: "PyApp CLI" },
 		techStack: [
 			{ icon: PythonIcon, title: "Python" },
-			{ icon: GithubActionsIcon, title: "Github Actions" },
+			{ icon: GithubActionsIcon, title: "GitHub Actions" },
 		],
 		badges: [PersonalBadge],
 		projectURL: "https://pypi.org/project/pyapp-cli",
