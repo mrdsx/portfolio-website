@@ -13,121 +13,123 @@ import SvelteIcon from "@/components/icons/svelte";
 import TailwindIcon from "@/components/icons/tailwindcss";
 import TypescriptIcon from "@/components/icons/typescript";
 import {
-  ovioImage,
-  portfolioImage,
-  pyAppCLIImage,
-  swiftTrackerImage,
-  wordGameImage,
+	mrdsxObserverImage,
+	ovioImage,
+	portfolioImage,
+	pyAppCLIImage,
+	swiftTrackerImage,
+	wordGameImage,
 } from "@/lib/images";
 
 type Project = {
-  name: string;
-  description: string;
-  image: {
-    src?: string;
-    alt: string;
-  };
-  techStack: { icon: () => React.ReactElement; title: string }[];
-  badges: (() => React.ReactElement)[];
-  githubURL?: string;
-  projectURL?: string;
+	name: string;
+	description: string;
+	image: {
+		src?: string;
+		alt: string;
+	};
+	techStack: { icon: () => React.ReactElement; title: string }[];
+	badges: (() => React.ReactElement)[];
+	githubURL?: string;
+	projectURL?: string;
 };
 
 const projects: Project[] = [
-  {
-    name: "mrdsx observer",
-    description: "A public dashboard for monitoring my projects statuses.",
-    image: { alt: "mrdsx observer" },
-    techStack: [
-      { icon: TypescriptIcon, title: "TypeScript" },
-      { icon: TailwindIcon, title: "TailwindCSS" },
-      { icon: NextJSIcon, title: "Next.js" },
-      { icon: PythonIcon, title: "Python" },
-      { icon: FastAPIIcon, title: " FastAPI" },
-      { icon: FirebaseIcon, title: "Firebase" },
-      { icon: RedisIcon, title: "Redis" },
-    ],
-    badges: [PersonalBadge],
-    githubURL: "https://github.com/mrdsx/mrdsx-observer",
-  },
-  {
-    name: "PyApp CLI",
-    description:
-      "A Python CLI for scaffolding Python projects with configurable tech stack (libraries/frameworks).",
-    image: { src: pyAppCLIImage, alt: "PyApp CLI" },
-    techStack: [
-      { icon: PythonIcon, title: "Python" },
-      { icon: GithubActionsIcon, title: "Github Actions" },
-    ],
-    badges: [PersonalBadge],
-    projectURL: "https://pypi.org/project/pyapp-cli",
-    githubURL: "https://github.com/mrdsx/pyapp-cli",
-  },
-  {
-    name: "Word Game",
-    description: `A web game, based on rules of "Words chain" game and
+	{
+		name: "mrdsx observer",
+		description: "A public dashboard for monitoring my projects statuses.",
+		image: { src: mrdsxObserverImage, alt: "mrdsx observer" },
+		techStack: [
+			{ icon: TypescriptIcon, title: "TypeScript" },
+			{ icon: TailwindIcon, title: "TailwindCSS" },
+			{ icon: NextJSIcon, title: "Next.js" },
+			{ icon: PythonIcon, title: "Python" },
+			{ icon: FastAPIIcon, title: " FastAPI" },
+			{ icon: FirebaseIcon, title: "Firebase" },
+			{ icon: RedisIcon, title: "Redis" },
+		],
+		badges: [PersonalBadge],
+		githubURL: "https://github.com/mrdsx/mrdsx-observer",
+		projectURL: "https://mrdsx-observer.vercel.app",
+	},
+	{
+		name: "PyApp CLI",
+		description:
+			"A Python CLI for scaffolding Python projects with configurable tech stack (libraries/frameworks).",
+		image: { src: pyAppCLIImage, alt: "PyApp CLI" },
+		techStack: [
+			{ icon: PythonIcon, title: "Python" },
+			{ icon: GithubActionsIcon, title: "Github Actions" },
+		],
+		badges: [PersonalBadge],
+		projectURL: "https://pypi.org/project/pyapp-cli",
+		githubURL: "https://github.com/mrdsx/pyapp-cli",
+	},
+	{
+		name: "Word Game",
+		description: `A web game, based on rules of "Words chain" game and
     built with serverless backend and user authentication.`,
-    image: { src: wordGameImage, alt: "Word Game" },
-    techStack: [
-      { icon: TypescriptIcon, title: "TypeScript" },
-      { icon: TailwindIcon, title: "TailwindCSS" },
-      { icon: SvelteIcon, title: "Svelte" },
-      { icon: PythonIcon, title: "Python" },
-      { icon: FastAPIIcon, title: "FastAPI" },
-      { icon: FirebaseIcon, title: "Firebase" },
-    ],
-    badges: [ToyProjectBadge],
-    projectURL: "https://classic-word-game.vercel.app",
-    githubURL: "https://github.com/mrdsx/word-game",
-  },
-  {
-    name: "Swift Tracker",
-    description: `An international payment tracker for fast
+		image: { src: wordGameImage, alt: "Word Game" },
+		techStack: [
+			{ icon: TypescriptIcon, title: "TypeScript" },
+			{ icon: TailwindIcon, title: "TailwindCSS" },
+			{ icon: SvelteIcon, title: "Svelte" },
+			{ icon: PythonIcon, title: "Python" },
+			{ icon: FastAPIIcon, title: "FastAPI" },
+			{ icon: FirebaseIcon, title: "Firebase" },
+		],
+		badges: [ToyProjectBadge],
+		projectURL: "https://classic-word-game.vercel.app",
+		githubURL: "https://github.com/mrdsx/word-game",
+	},
+	{
+		name: "Swift Tracker",
+		description: `An international payment tracker for fast
     transactions look up within the SWIFT GPI network.`,
-    image: { src: swiftTrackerImage, alt: "Swift Tracker" },
-    techStack: [
-      { icon: TypescriptIcon, title: "TypeScript" },
-      { icon: TailwindIcon, title: "TailwindCSS" },
-      { icon: ReactIcon, title: "React" },
-      { icon: AstroIcon, title: "Astro" },
-    ],
-    badges: [ProprietaryBadge],
-    projectURL: "https://swift-tracker.net",
-  },
-  {
-    name: "Portfolio Website",
-    description: `A website that highlights my experience
+		image: { src: swiftTrackerImage, alt: "Swift Tracker" },
+		techStack: [
+			{ icon: TypescriptIcon, title: "TypeScript" },
+			{ icon: TailwindIcon, title: "TailwindCSS" },
+			{ icon: ReactIcon, title: "React" },
+			{ icon: AstroIcon, title: "Astro" },
+		],
+		badges: [ProprietaryBadge],
+		projectURL: "https://swift-tracker.net",
+	},
+	{
+		name: "Portfolio Website",
+		description: `A website that highlights my experience
     and the outcome of building software.`,
-    image: { src: portfolioImage, alt: "Portfolio Website" },
-    techStack: [
-      { icon: TypescriptIcon, title: "TypeScript" },
-      { icon: TailwindIcon, title: "TailwindCSS" },
-      { icon: ReactIcon, title: "React" },
-      { icon: AstroIcon, title: "Astro" },
-    ],
-    badges: [PersonalBadge],
-    githubURL: "https://github.com/mrdsx/portfolio-website",
-    projectURL: "https://mrdsx.vercel.app",
-  },
-  {
-    name: "Olympiad Preparation",
-    description: `A fullstack web application,
+		image: { src: portfolioImage, alt: "Portfolio Website" },
+		techStack: [
+			{ icon: TypescriptIcon, title: "TypeScript" },
+			{ icon: TailwindIcon, title: "TailwindCSS" },
+			{ icon: ReactIcon, title: "React" },
+			{ icon: AstroIcon, title: "Astro" },
+		],
+		badges: [PersonalBadge],
+		githubURL: "https://github.com/mrdsx/portfolio-website",
+		projectURL: "https://mrdsx.vercel.app",
+	},
+	{
+		name: "Olympiad Preparation",
+		description: `A fullstack web application,
     developed for extensive preparation to the olympiad "ОВИО Наше наследие" (logo is above).`,
-    image: { src: ovioImage, alt: "Olympiad Preparation" },
-    techStack: [
-      { icon: TypescriptIcon, title: "TypeScript" },
-      { icon: TailwindIcon, title: "TailwindCSS" },
-      { icon: NextJSIcon, title: "Next.js" },
-      { icon: PythonIcon, title: "Python" },
-      { icon: FastAPIIcon, title: "FastAPI" },
-    ],
-    badges: [ProprietaryBadge],
-    projectURL: "https://olympiad-preparation.vercel.app",
-  },
+		image: { src: ovioImage, alt: "Olympiad Preparation" },
+		techStack: [
+			{ icon: TypescriptIcon, title: "TypeScript" },
+			{ icon: TailwindIcon, title: "TailwindCSS" },
+			{ icon: NextJSIcon, title: "Next.js" },
+			{ icon: PythonIcon, title: "Python" },
+			{ icon: FastAPIIcon, title: "FastAPI" },
+		],
+		badges: [ProprietaryBadge],
+		projectURL: "https://olympiad-preparation.vercel.app",
+	},
 ];
 
 const relevantProjects: Project[] = projects.filter((project) =>
-  ["Olympiad Preparation", "Swift Tracker"].includes(project.name),
+	["Olympiad Preparation", "Swift Tracker"].includes(project.name),
 );
 
 export { projects, relevantProjects };
