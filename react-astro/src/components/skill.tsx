@@ -4,44 +4,44 @@ import { useEffect, useState } from "react";
 import GlassButton, { glassButtonVariants } from "@/components/glass-button";
 import { toastAchievement } from "@/lib/utils";
 import {
-  decrementClickedSkillsCount,
-  incrementClickedSkillsCount,
-  registerSkill,
+	decrementClickedSkillsCount,
+	incrementClickedSkillsCount,
+	registerSkill,
 } from "@/store/clickedSkillsCount";
 
 const Skill = ({
-  children,
-  size,
+	children,
+	size,
 }: React.PropsWithChildren & VariantProps<typeof glassButtonVariants>) => {
-  const [isClicked, setIsClicked] = useState<boolean>(false);
+	const [isClicked, setIsClicked] = useState<boolean>(false);
 
-  const onAchievementFinish = (): void => {
-    toastAchievement("click-all-skills");
-  };
+	const onAchievementFinish = (): void => {
+		toastAchievement("click-all-skills");
+	};
 
-  useEffect(() => {
-    registerSkill();
-  }, []);
+	useEffect(() => {
+		registerSkill();
+	}, []);
 
-  return (
-    <GlassButton
-      className={isClicked ? "bg-gray-800 hover:bg-gray-700" : ""}
-      onClick={() =>
-        setIsClicked((prev) => {
-          const isClicked = !prev;
-          if (isClicked) {
-            incrementClickedSkillsCount(onAchievementFinish);
-          } else {
-            decrementClickedSkillsCount();
-          }
-          return isClicked;
-        })
-      }
-      size={size}
-    >
-      {children}
-    </GlassButton>
-  );
+	return (
+		<GlassButton
+			className={isClicked ? "bg-gray-800 hover:bg-gray-700" : ""}
+			onClick={() =>
+				setIsClicked((prev) => {
+					const isClicked = !prev;
+					if (isClicked) {
+						incrementClickedSkillsCount(onAchievementFinish);
+					} else {
+						decrementClickedSkillsCount();
+					}
+					return isClicked;
+				})
+			}
+			size={size}
+		>
+			{children}
+		</GlassButton>
+	);
 };
 
 export default Skill;
