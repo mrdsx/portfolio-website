@@ -67,10 +67,10 @@ const projects: Project[] = [
 		githubURL: "https://github.com/mrdsx/pyapp-cli",
 	},
 	{
-		name: "Word Game",
+		name: "Classic word game",
 		description: `A web game, based on rules of "Words chain" game and
     built with serverless backend and user authentication.`,
-		image: { src: wordGameImage, alt: "Word Game" },
+		image: { src: wordGameImage, alt: "Classic word game" },
 		techStack: [
 			{ icon: TypescriptIcon, title: "TypeScript" },
 			{ icon: TailwindIcon, title: "TailwindCSS" },
