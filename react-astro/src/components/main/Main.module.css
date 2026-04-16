@@ -1,9 +1,9 @@
 @reference "../../globals.css";
 
 .section {
-	@apply flex flex-col items-start gap-2;
+  @apply flex flex-col items-start gap-2;
 }
 
 .sectionHeading {
-	@apply my-2 text-xl font-bold;
+  @apply my-2 text-xl font-bold;
 }
