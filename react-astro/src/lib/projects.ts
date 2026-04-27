@@ -52,7 +52,7 @@ const projects: Project[] = [
     ],
     badges: [PersonalBadge],
     githubURL: "https://github.com/mrdsx/mrdsx-observer",
-    projectURL: "https://mrdsx-observer.vercel.app",
+    projectURL: "http://mrdsx-observer.ddns.net",
   },
   {
     name: "PyApp CLI",
