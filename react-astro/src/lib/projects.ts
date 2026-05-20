@@ -6,12 +6,14 @@ import FastAPIIcon from "@/components/icons/fastapi";
 import FirebaseIcon from "@/components/icons/firebase";
 import GithubActionsIcon from "@/components/icons/github-actions";
 import NextJSIcon from "@/components/icons/next";
+import PostgreSQLIcon from "@/components/icons/postgresql";
 import PythonIcon from "@/components/icons/python";
 import ReactIcon from "@/components/icons/react";
 import RedisIcon from "@/components/icons/redis";
 import SvelteIcon from "@/components/icons/svelte";
 import TailwindIcon from "@/components/icons/tailwindcss";
 import TypescriptIcon from "@/components/icons/typescript";
+import VikeIcon from "@/components/icons/vike";
 import {
   mrdsxObserverImage,
   ovioImage,
@@ -20,7 +22,6 @@ import {
   swiftTrackerImage,
   wordGameImage,
 } from "@/lib/images";
-import VikeIcon from "../components/icons/vike";
 
 type Project = {
   name: string;
@@ -47,7 +48,7 @@ const projects: Project[] = [
       { icon: VikeIcon, title: "Vike" },
       { icon: PythonIcon, title: "Python" },
       { icon: FastAPIIcon, title: " FastAPI" },
-      { icon: FirebaseIcon, title: "Firebase" },
+      { icon: PostgreSQLIcon, title: "PostgreSQL" },
       { icon: RedisIcon, title: "Redis" },
     ],
     badges: [PersonalBadge],
