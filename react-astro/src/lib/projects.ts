@@ -49,7 +49,6 @@ const projects: Project[] = [
       { icon: PythonIcon, title: "Python" },
       { icon: FastAPIIcon, title: " FastAPI" },
       { icon: PostgreSQLIcon, title: "PostgreSQL" },
-      { icon: RedisIcon, title: "Redis" },
     ],
     badges: [PersonalBadge],
     githubURL: "https://github.com/mrdsx/mrdsx-observer",
