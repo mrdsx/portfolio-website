@@ -9,7 +9,7 @@ import NextJSIcon from "@/components/icons/next";
 import PostgreSQLIcon from "@/components/icons/postgresql";
 import PythonIcon from "@/components/icons/python";
 import ReactIcon from "@/components/icons/react";
-import RedisIcon from "@/components/icons/redis";
+import SolidIcon from "@/components/icons/solid";
 import SvelteIcon from "@/components/icons/svelte";
 import TailwindIcon from "@/components/icons/tailwindcss";
 import TypescriptIcon from "@/components/icons/typescript";
@@ -44,7 +44,7 @@ const projects: Project[] = [
     techStack: [
       { icon: TypescriptIcon, title: "TypeScript" },
       { icon: TailwindIcon, title: "TailwindCSS" },
-      { icon: ReactIcon, title: "React" },
+      { icon: SolidIcon, title: "Solid.js" },
       { icon: VikeIcon, title: "Vike" },
       { icon: PythonIcon, title: "Python" },
       { icon: FastAPIIcon, title: " FastAPI" },
