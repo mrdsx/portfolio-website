@@ -13,7 +13,6 @@ import SolidIcon from "@/components/icons/solid";
 import SvelteIcon from "@/components/icons/svelte";
 import TailwindIcon from "@/components/icons/tailwindcss";
 import TypescriptIcon from "@/components/icons/typescript";
-import VikeIcon from "@/components/icons/vike";
 import {
   mrdsxObserverImage,
   ovioImage,
@@ -44,8 +43,7 @@ const projects: Project[] = [
     techStack: [
       { icon: TypescriptIcon, title: "TypeScript" },
       { icon: TailwindIcon, title: "TailwindCSS" },
-      { icon: SolidIcon, title: "Solid.js" },
-      { icon: VikeIcon, title: "Vike" },
+      { icon: SolidIcon, title: "SolidStart" },
       { icon: PythonIcon, title: "Python" },
       { icon: FastAPIIcon, title: " FastAPI" },
       { icon: PostgreSQLIcon, title: "PostgreSQL" },
