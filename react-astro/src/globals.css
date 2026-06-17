@@ -90,10 +90,3 @@
     @apply bg-background text-foreground font-sans;
   }
 }
-
-/*! DO NOT REMOVE! this code prevents red flash in buttons' borders in firefox */
-@-moz-document url-prefix() {
-  * {
-    @apply border-border;
-  }
-}

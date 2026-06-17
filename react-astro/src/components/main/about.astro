@@ -1,17 +1,18 @@
 ---
-import ReactSkill from "@/components/skills/react";
-import TypescriptSkill from "@/components/skills/typescript";
-
-import FirebaseSkill from "../skills/firebase";
+import ReactSkill from "../skills/react";
+import TypescriptSkill from "../skills/typescript";
+import FastAPISkill from "../skills/fastapi";
 import styles from "./Main.module.css";
+import PythonSkill from "../skills/python";
 ---
 
 <section class={styles.section}>
   <h2 class={styles.sectionHeading}>About me</h2>
   <div class="flex flex-wrap items-center gap-x-1 leading-8">
     Fullstack developer, specializing in interactive web apps with
+    <TypescriptSkill client:load size="sm" />,
     <ReactSkill client:load size="sm" />,
-    <TypescriptSkill client:load size="sm" /> and
-    <FirebaseSkill client:load size="sm" />.
+    <PythonSkill client:load size="sm" /> and
+    <FastAPISkill client:load size="sm" />.
   </div>
 </section>
