@@ -48,7 +48,7 @@ const projects: Project[] = [
       { icon: FastAPIIcon, title: " FastAPI" },
       { icon: PostgreSQLIcon, title: "PostgreSQL" },
     ],
-    badges: [PersonalBadge],
+    badges: [ToyProjectBadge],
     githubURL: "https://github.com/mrdsx/mrdsx-observer",
     projectURL: "http://mrdsx-observer.ddns.net",
   },
