@@ -19,8 +19,8 @@ type Project = {
   image?: string;
   techStack: { icon: () => React.ReactElement; title: string }[];
   badges: (() => React.ReactElement)[];
-  githubURL?: string;
-  projectURL?: string;
+  repoUrl?: string;
+  demoUrl?: string;
 };
 
 const projects: Project[] = [
@@ -30,7 +30,7 @@ const projects: Project[] = [
     image: placeholderImage,
     techStack: [tech.go, tech.python, tech.fastapi, tech.postgresql],
     badges: [DevelopingBadge, PersonalBadge],
-    githubURL: "https://github.com/mrdsx/taskish",
+    repoUrl: "https://github.com/mrdsx/taskish",
   },
   {
     name: "mrdsx observer",
@@ -45,8 +45,8 @@ const projects: Project[] = [
       tech.postgresql,
     ],
     badges: [ToyProjectBadge],
-    githubURL: "https://github.com/mrdsx/mrdsx-observer",
-    projectURL: "http://mrdsx-observer.ddns.net",
+    repoUrl: "https://github.com/mrdsx/mrdsx-observer",
+    demoUrl: "http://mrdsx-observer.ddns.net",
   },
   {
     name: "PyApp CLI",
@@ -55,8 +55,7 @@ const projects: Project[] = [
     image: pyAppCLIImage,
     techStack: [tech.python, tech.actions],
     badges: [PersonalBadge],
-    projectURL: "https://pypi.org/project/pyapp-cli",
-    githubURL: "https://github.com/mrdsx/pyapp-cli",
+    repoUrl: "https://github.com/mrdsx/pyapp-cli",
   },
   {
     name: "Classic word game",
@@ -72,8 +71,8 @@ const projects: Project[] = [
       tech.firebase,
     ],
     badges: [ToyProjectBadge],
-    projectURL: "https://classic-word-game.vercel.app",
-    githubURL: "https://github.com/mrdsx/word-game",
+    demoUrl: "https://classic-word-game.vercel.app",
+    repoUrl: "https://github.com/mrdsx/word-game",
   },
   {
     name: "Swift Tracker",
@@ -82,7 +81,7 @@ const projects: Project[] = [
     image: swiftTrackerImage,
     techStack: [tech.typescript, tech.tailwindcss, tech.react, tech.astro],
     badges: [ProprietaryBadge],
-    projectURL: "https://swift-tracker.net",
+    demoUrl: "https://swift-tracker.net",
   },
   {
     name: "Portfolio Website",
@@ -91,8 +90,8 @@ const projects: Project[] = [
     image: portfolioImage,
     techStack: [tech.typescript, tech.tailwindcss, tech.react, tech.astro],
     badges: [PersonalBadge],
-    githubURL: "https://github.com/mrdsx/portfolio-website",
-    projectURL: "https://mrdsx.vercel.app",
+    repoUrl: "https://github.com/mrdsx/portfolio-website",
+    demoUrl: "https://mrdsx.vercel.app",
   },
   {
     name: "Olympiad Preparation",
@@ -107,7 +106,7 @@ const projects: Project[] = [
       tech.fastapi,
     ],
     badges: [ProprietaryBadge],
-    projectURL: "https://olympiad-preparation.vercel.app",
+    demoUrl: "https://olympiad-preparation.vercel.app",
   },
 ];
 

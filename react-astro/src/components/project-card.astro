@@ -5,10 +5,10 @@ import {
   CardBadges,
   CardDescription,
   CardFooter,
-  CardGithubLink,
+  CardRepoLink,
   CardHeader,
   CardImage,
-  CardProjectLink,
+  CardDemoLink,
   CardSkills,
   CardTitle,
 } from "@/components/ui/card";
@@ -48,7 +48,7 @@ const { project, showBadges = false } = Astro.props;
     }
   </CardSkills>
   <CardFooter>
-    <CardGithubLink githubURL={project.githubURL} />
-    <CardProjectLink projectURL={project.projectURL} />
+    <CardRepoLink githubUrl={project.repoUrl} />
+    <CardDemoLink demoUrl={project.demoUrl} />
   </CardFooter>
 </Card>

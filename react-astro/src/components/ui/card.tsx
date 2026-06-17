@@ -43,42 +43,42 @@ const CardSkills = ({ children }: React.PropsWithChildren) => (
   <div className="flex flex-wrap gap-2 self-start">{children}</div>
 );
 
-const CardGithubLink = ({ githubURL }: { githubURL?: string }) => {
-  if (githubURL !== undefined) {
+const CardRepoLink = ({ githubUrl }: { githubUrl?: string }) => {
+  if (githubUrl === undefined) {
     return (
-      <Button className={LINK_CLASSNAME} asChild>
-        <a href={githubURL} target="_blank" rel="noopener noreferrer">
-          <GitHubIcon />
-          Github
-        </a>
+      <Button className={LINK_CLASSNAME} disabled aria-disabled>
+        <GitHubIcon />
+        Github
       </Button>
     );
   }
 
   return (
-    <Button className={LINK_CLASSNAME} disabled aria-disabled>
-      <GitHubIcon />
-      Github
+    <Button className={LINK_CLASSNAME} asChild>
+      <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+        <GitHubIcon />
+        Github
+      </a>
     </Button>
   );
 };
 
-const CardProjectLink = ({ projectURL }: { projectURL?: string }) => {
-  if (projectURL !== undefined) {
+const CardDemoLink = ({ demoUrl }: { demoUrl?: string }) => {
+  if (demoUrl === undefined) {
     return (
-      <Button className={LINK_CLASSNAME} asChild>
-        <a href={projectURL}>
-          <EyeIcon />
-          Live
-        </a>
+      <Button className={LINK_CLASSNAME} disabled aria-disabled>
+        <EyeIcon />
+        Live
       </Button>
     );
   }
 
   return (
-    <Button className={LINK_CLASSNAME} disabled aria-disabled>
-      <EyeIcon />
-      Live (soon)
+    <Button className={LINK_CLASSNAME} asChild>
+      <a href={demoUrl}>
+        <EyeIcon />
+        Live
+      </a>
     </Button>
   );
 };
@@ -86,12 +86,12 @@ const CardProjectLink = ({ projectURL }: { projectURL?: string }) => {
 export {
   Card,
   CardBadges,
+  CardDemoLink,
   CardDescription,
   CardFooter,
-  CardGithubLink,
+  CardRepoLink,
   CardHeader,
   CardImage,
-  CardProjectLink,
   CardSkills,
   CardTitle,
 };
