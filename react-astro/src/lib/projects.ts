@@ -18,6 +18,7 @@ import TypescriptIcon from "@/components/icons/typescript";
 import {
   mrdsxObserverImage,
   ovioImage,
+  placeholderImage,
   portfolioImage,
   pyAppCLIImage,
   swiftTrackerImage,
@@ -37,8 +38,8 @@ type Project = {
 const projects: Project[] = [
   {
     name: "Taskish",
-    description: "A single-user self-hostable platform for managing tasks",
-    image: undefined,
+    description: "A single-user self-hostable platform for managing tasks.",
+    image: placeholderImage,
     techStack: [
       { icon: GoIcon, title: "Go" },
       { icon: PythonIcon, title: "Python" },
