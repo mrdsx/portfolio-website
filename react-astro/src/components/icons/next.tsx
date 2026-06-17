@@ -1,5 +1,8 @@
 import SVG from "@/components/svg";
 
+const ID_B = "nextb";
+const ID_C = "nextc";
+
 const NextJSIcon = () => (
   <SVG xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
     <g clipPath="url(#a)">
@@ -8,14 +11,14 @@ const NextJSIcon = () => (
         d="M50 99.999c27.614 0 50-22.386 50-50s-22.386-50-50-50-50 22.386-50 50 22.386 50 50 50"
       />
       <path
-        fill="url(#b)"
+        fill={`url(#${ID_B})`}
         d="M83.06 87.51 38.412 30H30v39.983h6.73V38.545L77.777 91.58a50 50 0 0 0 5.283-4.07"
       />
-      <path fill="url(#c)" d="M70.556 29.999h-6.667v40h6.667z" />
+      <path fill={`url(#${ID_C})`} d="M70.556 29.999h-6.667v40h6.667z" />
     </g>
     <defs>
       <linearGradient
-        id="b"
+        id={ID_B}
         x1="60.556"
         x2="80.278"
         y1="64.721"
@@ -26,7 +29,7 @@ const NextJSIcon = () => (
         <stop offset="1" stopColor="#fff" stopOpacity="0" />
       </linearGradient>
       <linearGradient
-        id="c"
+        id={ID_C}
         x1="67.222"
         x2="67.111"
         y1="29.999"
