@@ -1,3 +1,4 @@
+import DevelopingBadge from "@/components/badges/developing";
 import PersonalBadge from "@/components/badges/personal";
 import ProprietaryBadge from "@/components/badges/proprietary";
 import ToyProjectBadge from "@/components/badges/toy-project";
@@ -44,7 +45,7 @@ const projects: Project[] = [
       { icon: FastAPIIcon, title: "FastAPI" },
       { icon: PostgreSQLIcon, title: "PostgreSQL" },
     ],
-    badges: [PersonalBadge],
+    badges: [DevelopingBadge, PersonalBadge],
     githubURL: "https://github.com/mrdsx/taskish",
   },
   {
