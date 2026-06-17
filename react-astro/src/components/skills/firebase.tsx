@@ -1,12 +1,11 @@
 import Skill from "@/components/skill";
-
-import FirebaseIcon from "../icons/firebase";
+import { tech } from "@/lib/technologies";
 
 const FirebaseSkill = ({ ...props }: React.ComponentProps<typeof Skill>) => (
   <Skill {...props}>
-    <FirebaseIcon />
-    Firebase
+    <tech.firebase.icon />
+    {tech.firebase.title}
   </Skill>
 );
 
-export default FirebaseSkill;
+export { FirebaseSkill };

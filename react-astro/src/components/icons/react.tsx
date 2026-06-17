@@ -1,4 +1,4 @@
-import SVG from "@/components/svg";
+import { SVG } from "@/components/svg";
 
 const ReactIcon = () => (
   <SVG xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
@@ -9,4 +9,4 @@ const ReactIcon = () => (
   </SVG>
 );
 
-export default ReactIcon;
+export { ReactIcon };

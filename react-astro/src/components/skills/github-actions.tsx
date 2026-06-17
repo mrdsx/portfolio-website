@@ -1,13 +1,13 @@
-import GithubActionsIcon from "@/components/icons/github-actions";
 import Skill from "@/components/skill";
+import { tech } from "@/lib/technologies";
 
 const GithubActionsSkill = ({
   ...props
 }: React.ComponentProps<typeof Skill>) => (
   <Skill {...props}>
-    <GithubActionsIcon />
-    GitHub Actions
+    <tech.actions.icon />
+    {tech.actions.title}
   </Skill>
 );
 
-export default GithubActionsSkill;
+export { GithubActionsSkill };

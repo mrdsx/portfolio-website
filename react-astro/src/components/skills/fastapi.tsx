@@ -1,10 +1,11 @@
-import FastAPIIcon from "@/components/icons/fastapi";
 import Skill from "@/components/skill";
+import { tech } from "@/lib/technologies";
 
-const FastAPISkill = ({ ...props }: React.ComponentProps<typeof Skill>) => (
+const FastApiSkill = ({ ...props }: React.ComponentProps<typeof Skill>) => (
   <Skill {...props}>
-    <FastAPIIcon /> FastAPI
+    <tech.fastapi.icon />
+    {tech.fastapi.title}
   </Skill>
 );
 
-export default FastAPISkill;
+export { FastApiSkill };

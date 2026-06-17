@@ -1,4 +1,4 @@
-import SVG from "@/components/svg";
+import { SVG } from "@/components/svg";
 
 const PyTestIcon = () => (
   <SVG xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
@@ -19,4 +19,4 @@ const PyTestIcon = () => (
   </SVG>
 );
 
-export default PyTestIcon;
+export { PyTestIcon };

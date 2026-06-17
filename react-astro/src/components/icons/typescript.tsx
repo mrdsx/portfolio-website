@@ -1,6 +1,6 @@
-import SVG from "@/components/svg";
+import { SVG } from "@/components/svg";
 
-const TypescriptIcon = () => (
+const TypeScriptIcon = () => (
   <SVG
     className="rounded-[2px]"
     xmlns="http://www.w3.org/2000/svg"
@@ -15,4 +15,4 @@ const TypescriptIcon = () => (
   </SVG>
 );
 
-export default TypescriptIcon;
+export { TypeScriptIcon };

@@ -50,10 +50,10 @@ const resetCompletedAchievements = (): void => {
 
 export {
   $completedAchievements,
+  type AchievementId,
   achievements,
   finishAchievement,
   getCompletedAchievementsCount,
   isAchievementCompleted,
   resetCompletedAchievements,
-  type AchievementId,
 };

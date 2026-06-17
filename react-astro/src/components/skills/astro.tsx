@@ -1,11 +1,11 @@
-import AstroIcon from "@/components/icons/astro";
 import Skill from "@/components/skill";
+import { tech } from "@/lib/technologies";
 
 const AstroSkill = ({ ...props }: React.ComponentProps<typeof Skill>) => (
   <Skill {...props}>
-    <AstroIcon />
-    Astro
+    <tech.astro.icon />
+    {tech.astro.title}
   </Skill>
 );
 
-export default AstroSkill;
+export { AstroSkill };

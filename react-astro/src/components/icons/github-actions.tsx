@@ -1,6 +1,6 @@
-import SVG from "@/components/svg";
+import { SVG } from "@/components/svg";
 
-const GithubActionsIcon = () => (
+const GitHubActionsIcon = () => (
   <SVG xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
     <path
       fill="#2088ff"
@@ -13,4 +13,4 @@ const GithubActionsIcon = () => (
   </SVG>
 );
 
-export default GithubActionsIcon;
+export { GitHubActionsIcon };

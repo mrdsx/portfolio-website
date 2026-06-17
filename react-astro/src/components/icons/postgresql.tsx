@@ -1,6 +1,6 @@
-import SVG from "@/components/svg";
+import { SVG } from "@/components/svg";
 
-const PostgreSQLIcon = () => (
+const PostgreSqlIcon = () => (
   <SVG xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
     <path
       fill="#000"
@@ -21,4 +21,4 @@ const PostgreSQLIcon = () => (
   </SVG>
 );
 
-export default PostgreSQLIcon;
+export { PostgreSqlIcon };

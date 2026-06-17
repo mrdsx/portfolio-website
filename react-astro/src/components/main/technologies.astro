@@ -1,23 +1,25 @@
 ---
-import AstroSkill from "@/components/skills/astro";
-import CSSSkill from "@/components/skills/css";
-import CypressSkill from "@/components/skills/cypress";
-import DockerSkill from "@/components/skills/docker";
-import FastAPISkill from "@/components/skills/fastapi";
-import FirebaseSkill from "@/components/skills/firebase";
-import GithubActionsSkill from "@/components/skills/github-actions";
-import HTMLSkill from "@/components/skills/html";
-import NextJSSkill from "@/components/skills/next";
-import PostgreSQLSkill from "@/components/skills/postgresql";
-import PyTestSkill from "@/components/skills/pytest";
-import PythonSkill from "@/components/skills/python";
-import ReactSkill from "@/components/skills/react";
-import RedisSkill from "@/components/skills/redis";
-import RenderSkill from "@/components/skills/render";
-import TailwindSkill from "@/components/skills/tailwindcss";
-import TypescriptSkill from "@/components/skills/typescript";
-import VercelSkill from "@/components/skills/vercel";
-import VitestSkill from "@/components/skills/vitest";
+import {
+  AstroSkill,
+  CssSkill,
+  CypressSkill,
+  DockerSkill,
+  FastApiSkill,
+  FirebaseSkill,
+  GithubActionsSkill,
+  HtmlSkill,
+  NextJsSkill,
+  PostgreSqlSkill,
+  PyTestSkill,
+  PythonSkill,
+  ReactSkill,
+  RedisSkill,
+  RenderSkill,
+  TailwindCssSkill,
+  TypeScriptSkill,
+  VercelSkill,
+  VitestSkill,
+} from "@/components/skills";
 import styles from "./Main.module.css";
 ---
 
@@ -26,12 +28,12 @@ import styles from "./Main.module.css";
   <div class="flex flex-col gap-2">
     <h3 class="min-w-30 font-semibold">Frontend</h3>
     <div class="flex flex-wrap gap-2">
-      <HTMLSkill client:load />
-      <CSSSkill client:load />
-      <TypescriptSkill client:load />
-      <TailwindSkill client:load />
+      <HtmlSkill client:load />
+      <CssSkill client:load />
+      <TypeScriptSkill client:load />
+      <TailwindCssSkill client:load />
       <ReactSkill client:load />
-      <NextJSSkill client:load />
+      <NextJsSkill client:load />
       <AstroSkill client:load />
     </div>
   </div>
@@ -39,9 +41,9 @@ import styles from "./Main.module.css";
     <h3 class="min-w-30 font-semibold">Backend</h3>
     <div class="flex flex-wrap gap-2">
       <PythonSkill client:load />
-      <FastAPISkill client:load />
+      <FastApiSkill client:load />
       <FirebaseSkill client:load />
-      <PostgreSQLSkill client:load />
+      <PostgreSqlSkill client:load />
       <RedisSkill client:load />
     </div>
   </div>

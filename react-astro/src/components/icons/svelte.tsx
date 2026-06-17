@@ -1,4 +1,4 @@
-import SVG from "@/components/svg";
+import { SVG } from "@/components/svg";
 
 const SvelteIcon = () => (
   <SVG xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
@@ -13,4 +13,4 @@ const SvelteIcon = () => (
   </SVG>
 );
 
-export default SvelteIcon;
+export { SvelteIcon };

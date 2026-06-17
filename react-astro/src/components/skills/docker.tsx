@@ -1,11 +1,11 @@
-import DockerIcon from "@/components/icons/docker";
 import Skill from "@/components/skill";
+import { tech } from "@/lib/technologies";
 
 const DockerSkill = ({ ...props }: React.ComponentProps<typeof Skill>) => (
   <Skill {...props}>
-    <DockerIcon />
-    Docker
+    <tech.docker.icon />
+    {tech.docker.title}
   </Skill>
 );
 
-export default DockerSkill;
+export { DockerSkill };

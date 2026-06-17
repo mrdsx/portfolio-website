@@ -1,4 +1,4 @@
-import SVG from "@/components/svg";
+import { SVG } from "@/components/svg";
 
 const GmailIcon = ({ ...props }: React.ComponentProps<typeof SVG>) => (
   <SVG xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 193" {...props}>
@@ -25,4 +25,4 @@ const GmailIcon = ({ ...props }: React.ComponentProps<typeof SVG>) => (
   </SVG>
 );
 
-export default GmailIcon;
+export { GmailIcon };

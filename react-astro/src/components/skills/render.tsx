@@ -1,11 +1,11 @@
-import RenderIcon from "@/components/icons/render";
 import Skill from "@/components/skill";
+import { tech } from "@/lib/technologies";
 
 const RenderSkill = ({ ...props }: React.ComponentProps<typeof Skill>) => (
   <Skill {...props}>
-    <RenderIcon />
-    Render
+    <tech.render.icon />
+    {tech.render.title}
   </Skill>
 );
 
-export default RenderSkill;
+export { RenderSkill };

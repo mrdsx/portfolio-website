@@ -1,10 +1,11 @@
-import PythonIcon from "@/components/icons/python";
 import Skill from "@/components/skill";
+import { tech } from "@/lib/technologies";
 
 const PythonSkill = ({ ...props }: React.ComponentProps<typeof Skill>) => (
   <Skill {...props}>
-    <PythonIcon /> Python
+    <tech.python.icon />
+    {tech.python.title}
   </Skill>
 );
 
-export default PythonSkill;
+export { PythonSkill };

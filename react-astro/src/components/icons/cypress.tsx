@@ -1,4 +1,4 @@
-import SVG from "@/components/svg";
+import { SVG } from "@/components/svg";
 
 const idA = "cypress-a";
 const idB = "cypress-b";
@@ -58,4 +58,4 @@ const CypressIcon = () => (
   </SVG>
 );
 
-export default CypressIcon;
+export { CypressIcon };

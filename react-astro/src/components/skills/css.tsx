@@ -1,11 +1,11 @@
-import CSSIcon from "@/components/icons/css";
 import Skill from "@/components/skill";
+import { tech } from "@/lib/technologies";
 
-const CSSSkill = ({ ...props }: React.ComponentProps<typeof Skill>) => (
+const CssSkill = ({ ...props }: React.ComponentProps<typeof Skill>) => (
   <Skill {...props}>
-    <CSSIcon />
-    CSS
+    <tech.css.icon />
+    {tech.css.title}
   </Skill>
 );
 
-export default CSSSkill;
+export { CssSkill };

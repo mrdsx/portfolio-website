@@ -1,10 +1,11 @@
-import TypescriptIcon from "@/components/icons/typescript";
 import Skill from "@/components/skill";
+import { tech } from "@/lib/technologies";
 
-const TypescriptSkill = ({ ...props }: React.ComponentProps<typeof Skill>) => (
+const TypeScriptSkill = ({ ...props }: React.ComponentProps<typeof Skill>) => (
   <Skill {...props}>
-    <TypescriptIcon /> TypeScript
+    <tech.typescript.icon />
+    {tech.typescript.title}
   </Skill>
 );
 
-export default TypescriptSkill;
+export { TypeScriptSkill };

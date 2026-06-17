@@ -1,11 +1,11 @@
-import HTMLIcon from "@/components/icons/html";
 import Skill from "@/components/skill";
+import { tech } from "@/lib/technologies";
 
-const HTMLSkill = ({ ...props }: React.ComponentProps<typeof Skill>) => (
+const HtmlSkill = ({ ...props }: React.ComponentProps<typeof Skill>) => (
   <Skill {...props}>
-    <HTMLIcon />
-    HTML
+    <tech.html.icon />
+    {tech.html.title}
   </Skill>
 );
 
-export default HTMLSkill;
+export { HtmlSkill };

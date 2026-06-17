@@ -1,4 +1,4 @@
-import SVG from "@/components/svg";
+import { SVG } from "@/components/svg";
 
 const GoIcon = () => (
   <SVG
@@ -20,4 +20,4 @@ const GoIcon = () => (
   </SVG>
 );
 
-export default GoIcon;
+export { GoIcon };

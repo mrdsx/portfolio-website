@@ -1,4 +1,4 @@
-import SVG from "@/components/svg";
+import { SVG } from "@/components/svg";
 
 const RedisIcon = () => (
   <SVG xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
@@ -35,4 +35,4 @@ const RedisIcon = () => (
   </SVG>
 );
 
-export default RedisIcon;
+export { RedisIcon };

@@ -1,11 +1,11 @@
-import PyTestIcon from "@/components/icons/pytest";
 import Skill from "@/components/skill";
+import { tech } from "@/lib/technologies";
 
 const PyTestSkill = ({ ...props }: React.ComponentProps<typeof Skill>) => (
   <Skill {...props}>
-    <PyTestIcon />
-    PyTest
+    <tech.pytest.icon />
+    {tech.pytest.title}
   </Skill>
 );
 
-export default PyTestSkill;
+export { PyTestSkill };

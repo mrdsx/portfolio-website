@@ -1,11 +1,11 @@
-import RedisIcon from "@/components/icons/redis";
 import Skill from "@/components/skill";
+import { tech } from "@/lib/technologies";
 
 const RedisSkill = ({ ...props }: React.ComponentProps<typeof Skill>) => (
   <Skill {...props}>
-    <RedisIcon />
-    Redis
+    <tech.redis.icon />
+    {tech.redis.title}
   </Skill>
 );
 
-export default RedisSkill;
+export { RedisSkill };

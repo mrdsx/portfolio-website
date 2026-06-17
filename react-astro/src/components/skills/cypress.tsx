@@ -1,11 +1,11 @@
-import CypressIcon from "@/components/icons/cypress";
 import Skill from "@/components/skill";
+import { tech } from "@/lib/technologies";
 
 const CypressSkill = ({ ...props }: React.ComponentProps<typeof Skill>) => (
   <Skill {...props}>
-    <CypressIcon />
-    Cypress
+    <tech.cypress.icon />
+    {tech.cypress.title}
   </Skill>
 );
 
-export default CypressSkill;
+export { CypressSkill };

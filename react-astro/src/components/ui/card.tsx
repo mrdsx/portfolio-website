@@ -1,7 +1,6 @@
 import { EyeIcon } from "lucide-react";
-
 import GlassButton from "@/components/glass-button";
-import GithubIcon from "@/components/icons/github";
+import { GitHubIcon } from "@/components/icons";
 import { Button } from "@/components/ui/button";
 
 const LINK_CLASSNAME = "flex-1";
@@ -28,6 +27,7 @@ const CardBadges = ({ ...props }: React.ComponentProps<"div">) => (
 );
 
 const CardImage = ({ ...props }: React.ComponentProps<"img">) => (
+  // biome-ignore lint/a11y/useAltText: .
   <img className="h-[200px] border bg-gray-800 p-2" {...props} />
 );
 
@@ -47,8 +47,8 @@ const CardGithubLink = ({ githubURL }: { githubURL?: string }) => {
   if (githubURL !== undefined) {
     return (
       <Button className={LINK_CLASSNAME} asChild>
-        <a href={githubURL} target="_blank">
-          <GithubIcon />
+        <a href={githubURL} target="_blank" rel="noopener noreferrer">
+          <GitHubIcon />
           Github
         </a>
       </Button>
@@ -57,7 +57,7 @@ const CardGithubLink = ({ githubURL }: { githubURL?: string }) => {
 
   return (
     <Button className={LINK_CLASSNAME} disabled aria-disabled>
-      <GithubIcon />
+      <GitHubIcon />
       Github
     </Button>
   );

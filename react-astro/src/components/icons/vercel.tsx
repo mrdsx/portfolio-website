@@ -1,4 +1,4 @@
-import SVG from "@/components/svg";
+import { SVG } from "@/components/svg";
 
 const VercelIcon = () => (
   <SVG
@@ -33,4 +33,4 @@ const VercelIcon = () => (
   </SVG>
 );
 
-export default VercelIcon;
+export { VercelIcon };

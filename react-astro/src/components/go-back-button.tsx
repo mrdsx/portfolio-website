@@ -1,5 +1,4 @@
 import { ArrowLeftIcon } from "lucide-react";
-
 import { Button } from "@/components/ui/button";
 
 const GoBackButton = ({ href }: Pick<React.ComponentProps<"a">, "href">) => (

@@ -1,11 +1,11 @@
-import NextJSIcon from "@/components/icons/next";
 import Skill from "@/components/skill";
+import { tech } from "@/lib/technologies";
 
-const NextJSSkill = ({ ...props }: React.ComponentProps<typeof Skill>) => (
+const NextJsSkill = ({ ...props }: React.ComponentProps<typeof Skill>) => (
   <Skill {...props}>
-    <NextJSIcon />
-    Next.js
+    <tech.nextjs.icon />
+    {tech.nextjs.title}
   </Skill>
 );
 
-export default NextJSSkill;
+export { NextJsSkill };

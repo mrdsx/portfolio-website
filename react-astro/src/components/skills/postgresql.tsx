@@ -1,11 +1,11 @@
-import PostgreSQLIcon from "@/components/icons/postgresql";
 import Skill from "@/components/skill";
+import { tech } from "@/lib/technologies";
 
-const PostgreSQLSkill = ({ ...props }: React.ComponentProps<typeof Skill>) => (
+const PostgreSqlSkill = ({ ...props }: React.ComponentProps<typeof Skill>) => (
   <Skill {...props}>
-    <PostgreSQLIcon />
-    PostgreSQL
+    <tech.postgresql.icon />
+    {tech.postgresql.title}
   </Skill>
 );
 
-export default PostgreSQLSkill;
+export { PostgreSqlSkill };

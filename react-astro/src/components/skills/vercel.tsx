@@ -1,11 +1,11 @@
-import VercelIcon from "@/components/icons/vercel";
 import Skill from "@/components/skill";
+import { tech } from "@/lib/technologies";
 
 const VercelSkill = ({ ...props }: React.ComponentProps<typeof Skill>) => (
   <Skill {...props}>
-    <VercelIcon />
-    Vercel
+    <tech.vercel.icon />
+    {tech.vercel.title}
   </Skill>
 );
 
-export default VercelSkill;
+export { VercelSkill };

@@ -1,11 +1,11 @@
-import TailwindIcon from "@/components/icons/tailwindcss";
 import Skill from "@/components/skill";
+import { tech } from "@/lib/technologies";
 
-const TailwindSkill = ({ ...props }: React.ComponentProps<typeof Skill>) => (
+const TailwindCssSkill = ({ ...props }: React.ComponentProps<typeof Skill>) => (
   <Skill {...props}>
-    <TailwindIcon />
-    TailwindCSS
+    <tech.tailwindcss.icon />
+    {tech.tailwindcss.title}
   </Skill>
 );
 
-export default TailwindSkill;
+export { TailwindCssSkill };

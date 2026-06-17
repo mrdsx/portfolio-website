@@ -2,10 +2,10 @@ import { Button } from "@/components/ui/button";
 import { resetCompletedAchievements } from "@/store/achievements";
 
 const ResetAchievementsButton = () => {
-  function handleClick(): void {
+  const handleClick = () => {
     resetCompletedAchievements();
     window.location.href = "/";
-  }
+  };
 
   return (
     <Button variant="destructive" onClick={handleClick}>

@@ -1,6 +1,6 @@
-import SVG from "@/components/svg";
+import { SVG } from "@/components/svg";
 
-const CSSIcon = () => (
+const CssIcon = () => (
   <SVG
     viewBox="0 0 64 64"
     role="img"
@@ -28,4 +28,4 @@ const CSSIcon = () => (
   </SVG>
 );
 
-export default CSSIcon;
+export { CssIcon };

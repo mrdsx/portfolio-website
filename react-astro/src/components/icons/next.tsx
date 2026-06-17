@@ -1,9 +1,9 @@
-import SVG from "@/components/svg";
+import { SVG } from "@/components/svg";
 
 const ID_B = "nextb";
 const ID_C = "nextc";
 
-const NextJSIcon = () => (
+const NextJsIcon = () => (
   <SVG xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
     <g clipPath="url(#a)">
       <path
@@ -46,4 +46,4 @@ const NextJSIcon = () => (
   </SVG>
 );
 
-export default NextJSIcon;
+export { NextJsIcon };

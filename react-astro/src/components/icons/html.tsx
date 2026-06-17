@@ -1,6 +1,6 @@
-import SVG from "@/components/svg";
+import { SVG } from "@/components/svg";
 
-const HTMLIcon = () => (
+const HtmlIcon = () => (
   <SVG xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
     <path
       fill="#E44D26"
@@ -18,4 +18,4 @@ const HTMLIcon = () => (
   </SVG>
 );
 
-export default HTMLIcon;
+export { HtmlIcon };

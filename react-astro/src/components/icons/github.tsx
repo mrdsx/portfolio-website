@@ -1,6 +1,6 @@
-import SVG from "@/components/svg";
+import { SVG } from "@/components/svg";
 
-const GithubIcon = ({ ...props }: React.ComponentProps<typeof SVG>) => (
+const GitHubIcon = ({ ...props }: React.ComponentProps<typeof SVG>) => (
   <SVG xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" {...props}>
     <path
       fillRule="evenodd"
@@ -12,4 +12,4 @@ const GithubIcon = ({ ...props }: React.ComponentProps<typeof SVG>) => (
   </SVG>
 );
 
-export default GithubIcon;
+export { GitHubIcon };

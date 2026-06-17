@@ -1,7 +1,9 @@
-import { type VariantProps } from "class-variance-authority";
+import type { VariantProps } from "class-variance-authority";
 import { useEffect, useState } from "react";
 
-import GlassButton, { glassButtonVariants } from "@/components/glass-button";
+import GlassButton, {
+  type glassButtonVariants,
+} from "@/components/glass-button";
 import { toastAchievement } from "@/lib/utils";
 import {
   decrementClickedSkillsCount,

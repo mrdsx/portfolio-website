@@ -2,7 +2,7 @@
   "SVG Icon": {
     "prefix": "icon",
     "body": [
-      "import SVG from \"@/components/svg\";",
+      "import { SVG } from \"@/components/svg\";",
       "",
       "const $1Icon = () => (",
       "  $2",
