@@ -1,46 +1,14 @@
 ---
 import ProjectListButton from "@/components/project-list-button";
 import { relevantProjects } from "@/lib/projects";
-import SVGTooltip from "../svg-tooltip";
-import {
-  Card,
-  CardDescription,
-  CardFooter,
-  CardGithubLink,
-  CardHeader,
-  CardImage,
-  CardProjectLink,
-  CardSkills,
-  CardTitle,
-} from "../ui/card";
+import ProjectCard from "@/components/project-card.astro";
 import styles from "./Main.module.css";
 ---
 
 <section class={styles.section}>
   <h2 class={styles.sectionHeading}>Projects</h2>
   <div class="flex flex-wrap gap-4 sm:w-fit">
-    {
-      relevantProjects.map((project) => (
-        <Card>
-          <CardHeader>
-            <CardImage {...project.image} />
-            <CardTitle>{project.name}</CardTitle>
-            <CardDescription>{project.description}</CardDescription>
-          </CardHeader>
-          <CardSkills>
-            {project.techStack.map((tech) => (
-              <SVGTooltip client:visible content={tech.title}>
-                <tech.icon />
-              </SVGTooltip>
-            ))}
-          </CardSkills>
-          <CardFooter>
-            <CardGithubLink githubURL={project.githubURL} />
-            <CardProjectLink projectURL={project.projectURL} />
-          </CardFooter>
-        </Card>
-      ))
-    }
+    {relevantProjects.map((project) => <ProjectCard {project} />)}
   </div>
   <ProjectListButton />
 </section>

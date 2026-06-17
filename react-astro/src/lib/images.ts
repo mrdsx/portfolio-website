@@ -8,10 +8,10 @@ const swiftTrackerImage = getCDNImageURL("swift-tracker_ho3czs");
 const wordGameImage = getCDNImageURL("word-game_yfk0md");
 
 export {
+  mrdsxObserverImage,
   ovioImage,
   portfolioImage,
   pyAppCLIImage,
-  mrdsxObserverImage,
   swiftTrackerImage,
   wordGameImage,
 };

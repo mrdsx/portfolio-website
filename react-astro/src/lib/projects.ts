@@ -144,4 +144,4 @@ const relevantProjects: Project[] = projects.filter((project) =>
   ["Olympiad Preparation", "Swift Tracker"].includes(project.name),
 );
 
-export { projects, relevantProjects };
+export { type Project, projects, relevantProjects };

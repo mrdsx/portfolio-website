@@ -4,20 +4,8 @@ import DevelopingBadge from "@/components/badges/developing";
 import ProprietaryBadge from "@/components/badges/proprietary";
 import ToyProjectBadge from "@/components/badges/toy-project";
 import GoBackButton from "@/components/go-back-button";
+import ProjectCard from "@/components/project-card.astro";
 import RootLayout from "@/components/root-layout.astro";
-import SVGTooltip from "@/components/svg-tooltip";
-import {
-  Card,
-  CardBadges,
-  CardDescription,
-  CardFooter,
-  CardGithubLink,
-  CardHeader,
-  CardImage,
-  CardProjectLink,
-  CardSkills,
-  CardTitle,
-} from "@/components/ui/card";
 import { projects } from "@/lib/projects";
 ---
 
@@ -40,34 +28,7 @@ import { projects } from "@/lib/projects";
       </p>
     </section>
     <div class="flex flex-wrap gap-4 sm:w-fit">
-      {
-        projects.map((project) => (
-          <Card>
-            <CardHeader>
-              <CardBadges>
-                {project.badges.map((badge) => {
-                  const Badge = badge;
-                  return <Badge />;
-                })}
-              </CardBadges>
-              <CardImage src={project.image} alt={project.name} />
-              <CardTitle>{project.name}</CardTitle>
-              <CardDescription>{project.description}</CardDescription>
-            </CardHeader>
-            <CardSkills>
-              {project.techStack.map((tech) => (
-                <SVGTooltip client:visible content={tech.title}>
-                  <tech.icon />
-                </SVGTooltip>
-              ))}
-            </CardSkills>
-            <CardFooter>
-              <CardGithubLink githubURL={project.githubURL} />
-              <CardProjectLink projectURL={project.projectURL} />
-            </CardFooter>
-          </Card>
-        ))
-      }
+      {projects.map((project) => <ProjectCard {project} showBadges />)}
     </div>
   </div>
 </RootLayout>

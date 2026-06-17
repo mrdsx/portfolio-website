@@ -1,0 +1,54 @@
+---
+import type { Project } from "@/lib/projects";
+import {
+  Card,
+  CardHeader,
+  CardImage,
+  CardBadges,
+  CardTitle,
+  CardDescription,
+  CardGithubLink,
+  CardProjectLink,
+  CardSkills,
+  CardFooter,
+} from "@/components/ui/card";
+import SVGTooltip from "@/components/svg-tooltip";
+
+type Props = {
+  project: Project;
+  showBadges?: boolean;
+};
+
+const { project, showBadges = false } = Astro.props;
+---
+
+<Card>
+  <CardHeader>
+    {
+      showBadges && (
+        <CardBadges>
+          {project.badges.map((badge) => {
+            const Badge = badge;
+            return <Badge />;
+          })}
+        </CardBadges>
+      )
+    }
+    <CardImage src={project.image} alt={project.name} />
+    <CardTitle>{project.name}</CardTitle>
+    <CardDescription>{project.description}</CardDescription>
+  </CardHeader>
+  <CardSkills>
+    {
+      project.techStack.map((tech) => (
+        <SVGTooltip client:visible content={tech.title}>
+          <tech.icon />
+        </SVGTooltip>
+      ))
+    }
+  </CardSkills>
+  <CardFooter>
+    <CardGithubLink githubURL={project.githubURL} />
+    <CardProjectLink projectURL={project.projectURL} />
+  </CardFooter>
+</Card>
