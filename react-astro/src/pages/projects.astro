@@ -46,7 +46,7 @@ import { projects } from "@/lib/projects";
                   return <Badge />;
                 })}
               </CardBadges>
-              <CardImage {...project.image} />
+              <CardImage src={project.image} alt={project.name} />
               <CardTitle>{project.name}</CardTitle>
               <CardDescription>{project.description}</CardDescription>
             </CardHeader>

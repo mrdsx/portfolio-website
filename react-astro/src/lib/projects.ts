@@ -5,6 +5,7 @@ import AstroIcon from "@/components/icons/astro";
 import FastAPIIcon from "@/components/icons/fastapi";
 import FirebaseIcon from "@/components/icons/firebase";
 import GithubActionsIcon from "@/components/icons/github-actions";
+import GoIcon from "@/components/icons/go";
 import NextJSIcon from "@/components/icons/next";
 import PostgreSQLIcon from "@/components/icons/postgresql";
 import PythonIcon from "@/components/icons/python";
@@ -25,10 +26,7 @@ import {
 type Project = {
   name: string;
   description: string;
-  image: {
-    src?: string;
-    alt: string;
-  };
+  image?: string;
   techStack: { icon: () => React.ReactElement; title: string }[];
   badges: (() => React.ReactElement)[];
   githubURL?: string;
@@ -37,9 +35,22 @@ type Project = {
 
 const projects: Project[] = [
   {
+    name: "Taskish",
+    description: "A single-user self-hostable platform for managing tasks",
+    image: undefined,
+    techStack: [
+      { icon: GoIcon, title: "Go" },
+      { icon: PythonIcon, title: "Python" },
+      { icon: FastAPIIcon, title: "FastAPI" },
+      { icon: PostgreSQLIcon, title: "PostgreSQL" },
+    ],
+    badges: [PersonalBadge],
+    githubURL: "https://github.com/mrdsx/taskish",
+  },
+  {
     name: "mrdsx observer",
     description: "A public dashboard for monitoring my projects status.",
-    image: { src: mrdsxObserverImage, alt: "mrdsx observer" },
+    image: mrdsxObserverImage,
     techStack: [
       { icon: TypescriptIcon, title: "TypeScript" },
       { icon: TailwindIcon, title: "TailwindCSS" },
@@ -56,7 +67,7 @@ const projects: Project[] = [
     name: "PyApp CLI",
     description:
       "A Python CLI for scaffolding Python projects with configurable tech stack (libraries/frameworks).",
-    image: { src: pyAppCLIImage, alt: "PyApp CLI" },
+    image: pyAppCLIImage,
     techStack: [
       { icon: PythonIcon, title: "Python" },
       { icon: GithubActionsIcon, title: "GitHub Actions" },
@@ -69,7 +80,7 @@ const projects: Project[] = [
     name: "Classic word game",
     description: `A web game, based on rules of "Words chain" game and
     built with serverless backend and user authentication.`,
-    image: { src: wordGameImage, alt: "Classic word game" },
+    image: wordGameImage,
     techStack: [
       { icon: TypescriptIcon, title: "TypeScript" },
       { icon: TailwindIcon, title: "TailwindCSS" },
@@ -86,7 +97,7 @@ const projects: Project[] = [
     name: "Swift Tracker",
     description: `An international payment tracker for fast
     transactions look up within the SWIFT GPI network.`,
-    image: { src: swiftTrackerImage, alt: "Swift Tracker" },
+    image: swiftTrackerImage,
     techStack: [
       { icon: TypescriptIcon, title: "TypeScript" },
       { icon: TailwindIcon, title: "TailwindCSS" },
@@ -100,7 +111,7 @@ const projects: Project[] = [
     name: "Portfolio Website",
     description: `A website that highlights my experience
     and the outcome of building software.`,
-    image: { src: portfolioImage, alt: "Portfolio Website" },
+    image: portfolioImage,
     techStack: [
       { icon: TypescriptIcon, title: "TypeScript" },
       { icon: TailwindIcon, title: "TailwindCSS" },
@@ -115,7 +126,7 @@ const projects: Project[] = [
     name: "Olympiad Preparation",
     description: `A fullstack web application,
     developed for extensive preparation to the olympiad "ОВИО Наше наследие" (logo is above).`,
-    image: { src: ovioImage, alt: "Olympiad Preparation" },
+    image: ovioImage,
     techStack: [
       { icon: TypescriptIcon, title: "TypeScript" },
       { icon: TailwindIcon, title: "TailwindCSS" },
