@@ -45,6 +45,7 @@ const tech = {
   react: { icon: ReactIcon, title: "React" },
   redis: { icon: RedisIcon, title: "Redis" },
   render: { icon: RenderIcon, title: "Render" },
+  solidjs: { icon: SolidIcon, title: "Solid.js" },
   solidstart: { icon: SolidIcon, title: "SolidStart" },
   svelte: { icon: SvelteIcon, title: "Svelte" },
   tailwindcss: { icon: TailwindCssIcon, title: "TailwindCSS" },
