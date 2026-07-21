@@ -54,7 +54,7 @@ const projects: Project[] = [
     ],
     badges: [ToyProjectBadge],
     repoUrl: "https://github.com/mrdsx/mrdsx-observer",
-    demoUrl: "http://mrdsx-observer.ddns.net",
+    demoUrl: "https://mrdsx-observer.duckdns.org",
   },
   {
     name: "PyApp CLI",
