@@ -1,11 +1,11 @@
 ---
 import About from "./about.astro";
 import Projects from "./projects.astro";
-import Technologies from "./technologies.astro";
+import { Technologies } from "./technologies";
 ---
 
 <main class="flex flex-col gap-8">
   <About />
-  <Technologies />
+  <Technologies client:load />
   <Projects />
 </main>

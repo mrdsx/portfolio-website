@@ -32,12 +32,11 @@ const projects: Project[] = [
       tech.typescript,
       tech.tailwindcss,
       tech.solidjs,
-      tech.go,
       tech.python,
       tech.fastapi,
       tech.postgresql,
     ],
-    badges: [DevelopingBadge, PersonalBadge],
+    badges: [PersonalBadge],
     repoUrl: "https://github.com/mrdsx/taskish",
   },
   {

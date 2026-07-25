@@ -14,12 +14,10 @@ import {
   PythonIcon,
   ReactIcon,
   RedisIcon,
-  RenderIcon,
   SolidIcon,
   SvelteIcon,
   TailwindCssIcon,
   TypeScriptIcon,
-  VercelIcon,
   VitestIcon,
 } from "@/components/icons";
 
@@ -44,14 +42,12 @@ const tech = {
   python: { icon: PythonIcon, title: "Python" },
   react: { icon: ReactIcon, title: "React" },
   redis: { icon: RedisIcon, title: "Redis" },
-  render: { icon: RenderIcon, title: "Render" },
   solidjs: { icon: SolidIcon, title: "Solid.js" },
   solidstart: { icon: SolidIcon, title: "SolidStart" },
   svelte: { icon: SvelteIcon, title: "Svelte" },
   tailwindcss: { icon: TailwindCssIcon, title: "TailwindCSS" },
   typescript: { icon: TypeScriptIcon, title: "TypeScript" },
-  vercel: { icon: VercelIcon, title: "Vercel" },
   vitest: { icon: VitestIcon, title: "Vitest" },
 } as const satisfies Record<string, Technology>;
 
-export { tech };
+export { type Technology, tech };

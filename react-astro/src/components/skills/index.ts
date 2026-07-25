@@ -12,8 +12,6 @@ export { PyTestSkill } from "./pytest.tsx";
 export { PythonSkill } from "./python.tsx";
 export { ReactSkill } from "./react.tsx";
 export { RedisSkill } from "./redis.tsx";
-export { RenderSkill } from "./render.tsx";
 export { TailwindCssSkill } from "./tailwindcss.tsx";
 export { TypeScriptSkill } from "./typescript.tsx";
-export { VercelSkill } from "./vercel.tsx";
 export { VitestSkill } from "./vitest.tsx";
